@@ -1,9 +1,11 @@
 # Introduction
 
-This is a book created from markdown and executable code.
+This is a learning diary of Atsumi Hirose
 
-See @knuth84 for additional discussion of literate programming.
+I am looking forward to learning remote sensing on this module!
 
-```{r}
-1 + 1
-```
+I have (doctoral and postdoctoral) training in epidemiology
+(of maternal and newborn health). I also have a master degree in Demography. I have (research) interests in understanding gender roles, environmental factors and health system factors that contribute to maternal and newborn health outcomes in resource-limited countries in Asia and Sub-Saharan Africa. Among these, I have become increasingly interested in environmental factors including physical distances between home and health facilities or where women live (urban slums) which contribute to health outcomes, particularly pregnancy outcome. Traditional health survey data do not provide sufficient information with good coverage to understand the environments where women live. In order to study these spatial health inequalities, I have become interested to using Earth Observation data, thus, I am doing a master degree again.
+
+Anyway, I am looking forward to learning how to manipulate
+remotely sensed data including Google Earth Engine later in the term.
