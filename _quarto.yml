@@ -3,7 +3,7 @@ project:
 
 book:
   title: "remote_sensing"
-  author: "Jane Doe"
+  author: "Atsumi Hirose"
   date: "01/02/2023"
   chapters:
     - index.qmd
