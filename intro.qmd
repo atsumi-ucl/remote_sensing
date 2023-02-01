@@ -4,9 +4,8 @@ This is a learning diary of Atsumi Hirose
 
 I am looking forward to learning remote sensing on this module!
 
-I have (doctoral and postdoctoral) training in epidemiology of maternal and newborn health. I also have a master degree in Demography. My research interests include spatial health inequalities particularly spatial factors that affect maternal and newborn health in resource-limited countries in Asia and Sub-Saharan Africa. I have become increasingly interested in measuring environmental factors and including them in analysis. For example, where women live (urban slums) or physical distances between home and healthcare services
-which contribute to health and pregnancy outcome.
+I have (doctoral and postdoctoral) training in epidemiology of maternal and newborn health. I also have a master degree in Demography. My research interests include spatial health inequalities particularly spatial factors that affect maternal and newborn health in resource-limited countries in Asia and Sub-Saharan Africa. I have become increasingly interested in measuring environmental factors and including them in analysis. For example, where pregnant women live (urban slums) or physical distances between home and healthcare services which contribute to health and pregnancy outcome.
 
-Traditional health survey data do not provide sufficient information with good coverage to understand the environments where women live. In order to study spatial health inequalities, I have become interested to using Earth Observation data, thus, I am doing a master degree again.
+Traditional health survey data do not provide sufficient information with good coverage to understand the environments where women live in. In order to study spatial health inequalities, I have become interested to using Earth Observation data, thus, I am doing a master degree again.
 
 Anyway, I am looking forward to learning how to manipulate remotely sensed data including Google Earth Engine later in the term.
