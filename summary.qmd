@@ -1,6 +1,12 @@
 # Summary
 
-In summary, this book has no content whatsoever.
+1.  Week 1
+2.  
+3.  Week 2
+4.  Week 3
+5.  Week 4
+6.  
+7.  In summary, this book has no content whatsoever.
 
 ```{r}
 1 + 1
