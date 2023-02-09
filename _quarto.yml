@@ -18,7 +18,7 @@ website:
     style: docked
     search: true
     contents: 
-      - section: "Basics"
+      - section: "Contents"
         contents: 
         - index.qmd
         - summary.qmd

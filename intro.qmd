@@ -1,13 +1,17 @@
 # Introduction
 
-This is a learning diary of Atsumi Hirose
+::: {style="float: right; position: relative;  "}
+![](images/DSC_2468%20(headshot)_resized.jpg){width="150"}
+:::
+
+This is a learning diary of Atsumi Hirose.
 
 I am looking forward to learning remote sensing on this module!
 
-A bit of my backgruond as a way of introduction. I have (doctoral and postdoctoral) training in epidemiology of maternal and newborn health. I also have a master degree in Demography. While I was a demography student more than 10 years ago, I was interested in how gender roles affect women's decision to seek (delivery) care, mainly in South Asia (such as India, Pakistan, Afghanistan and so on).
+A bit of my backgruond as a way of introduction. I have (doctoral and postdoctoral) training in the epidemiology of maternal and newborn health. My postdoctoral work mainly has focused on understanding health system factors to improve pregnancy outcomes in resource-limited countries in Africa and Asia.
 
-Since then I have moved on (a lot). More recently, my research interests expanded to include spatial health inequalities particularly spatial factors that affect maternal and newborn health in resource-limited countries in Asia and Sub-Saharan Africa. I have become increasingly interested in measuring environmental factors and including them in research investigation. For example, how the location pregnant women live in (urban slums) or physical distances between home and healthcare services contribute to health and pregnancy outcomes.
+My other strand of research which I hope to expand in the future is the investigation of geospatial factors that affect maternal and newborn health. For example, this so far has included how physical distances between home and healthcare services contribute to poor pregnancy outcomes and how the location pregnant women live in (urban slums) contribute to poor pregnancy outcomes.
 
-Traditional health survey data do not provide sufficient information with good coverage to understand the environments where women live in, but they are usually georeferenced. In order to pursue my interest in spatial health inequalities, I have become interested to using Earth Observation data, thus, I am doing a master degree again.
+Traditional health survey data do not provide sufficient information with good coverage to understand the environments where women live in, but they are usually georeferenced. In order to pursue my interest in geospatial health inequalities, I have become interested to using Earth Observation data, this is why I am doing a master degree again. I am hoping to include environmental and climate-related factors into my future research.
 
 Anyway, I am looking forward to learning how to manipulate remotely sensed data including Google Earth Engine later in the term.
