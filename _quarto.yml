@@ -32,8 +32,6 @@ format:
     toc: true
   pdf:
     documentclass: scrreprt
----
 
----
 editor: visual
 
