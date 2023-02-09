@@ -2,25 +2,37 @@
 
 ## Summary
 
-Amongst the many points addressed in the lectures were: 1. Earth Observation data uses electromagnetic radiation reflected or emitted from the object or area of interest that travels at the speed of light to obtain data. and 2. Some objects can be detected in a certain light more effectively than others. eg. leaves of the trees in xx 1. Two types of sensors to record electromagnetic radiation
+Amongst the many points addressed in the lectures were: 1. Earth Observation data uses electromagnetic radiation reflected or emitted from the object or area of interest that travels at the speed of light (because electromagnetic radiation is light itself!?!?). and 2. Some objects, or rather, electromagnetic radiation in a certain spectrum which cannot be viewed by human eyes can be detected by satellite sensors to allow human eyes to see them. Because colours are nothing but light, and light is nothing but electromagnetic radiation and electromagnetic radiation consists of different waves which is part of the electromagnetic spectrum ?!?! (this blows my mind as i write. Am I supposed to have known this as someone who finished primary education a number of years ago?)
+
+![](light%20electromagnetic%20radiation.png)
+
+Take leaves of the trees (or vegetation) as an example. They can be viewed in the visible spectrum but also in the near-infrared light .
+
+Firstly, why leaves green? Wavelengths in the green region of the electromagnetic spectrum are reflected by pigments in the leaf' (NASA Science). That's why we see green leaves. But also 'a plant with more chrlorophyll (pigment) will reflect more near-infrared energy than an unhealthy plant' (NASA Science). So this is why with satellite imagery, we can use both the visible and invisible near-infrared spectrum to study vegetation.
+
+SCATTERING: Why is the sky black on the moon? (no atmosphere) Why is the sky blue? (short waves scattered) Why is the sky red when the sun goes down?
+
+Why is the ocean blue? - water absorbs the red yellow and green waves but reflects /scatters blue.
+
+Finally, there are two types of sensors to record electromagnetic radiation.
 
 1\. Passive sensors record EMR reflected or emitted from the terrain.
 
 2\. Active sensors such as LiDAR (on aircrafts), SAR or RADAR emit electromagnetic waves and record the amount of radiant flux (energy per unit of time) that travelled back to the sensors. These are used to develop the DEM, digital elevation model, using the speed of travel to measure the distance between the point on the terrain and the location of the sensor. SAR can see through clouds.
 
-2.  SCATTERING: Why is the sky black on the moon? (no atmosphere) Why is the sky blue? (short waves scattered) Why is the sky red when the sun goes down?
-
-3.  Why is the ocean blue? - water absorbs the red yellow and green waves but reflects /scatters blue.
-
 ## Application
 
-In the field of global public health, malaria or infectious disease epidemiologists have been the forerunner in using geospatial data including Earth Observation data.
+1.  Surface temperature
 
-A quick search in web of science using key words (
+    'Heat' is such a bit topic these days. Many climate & health research investigates the effect of 'heat' on health. How do we get land surface temperature data? I read that Land Surface Temperature is derived from thermal infrared data, which is in the wavelength range of 0.75 -15 μm. Which can be recorded by a multispectoral scanner on Landsat 8, MODIS, ASTER etc etc.
 
-So far,
+2.  In the field of global public health, malaria or infectious disease epidemiologists have been the forerunner in using geospatial data including Earth Observation data. For example, this paper by @Brousse2020 uses the urban classification data, based on the Local Climate Zone map which is developed based on satellite imagery, to predict malaria prevalence.
+
+3.  What drew me to Earth Observation data in the first place is my frustration due the lack of granularity of urban/rural classification in population-based health surveys. There is usually only two groups of urban or rural. But when I got to know that satellite imagery may be used to classify urban settlements into formal and informal, I got interested in exploring it. Different characteristics of informal settlements can be used in combination of ML classification tasks. [@kuffer2016]
 
 ## Reflection
+
+It has taken me some time to absorb this week's concept. What has helped me understand is the fact that there is no such thing as colour, "colours do not exist, what exist is light". Different objects reflect or absorb light in different ways (eg as I explained of green leaves) and satellite sensors and earth observation data take advantage of this fact.
 
 # Week 2
 
@@ -37,19 +49,3 @@ So far,
 ## Application
 
 ## Reflection
-
-1.  Week 1
-
-    Summary
-
-    Application
-
-    Reflection
-
-2.  Week 2
-
-3.  Week 3
-
-4.  Week 4
-
-5.  

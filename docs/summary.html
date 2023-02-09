@@ -20,69 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -103,11 +59,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -125,70 +81,151 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./intro.html">
- <span class="menu-text">Introduction</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./summary.html" aria-current="page">
- <span class="menu-text">Summary</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./references.html">
- <span class="menu-text">References</span></a>
-  </li>  
-</ul>
-              <div id="quarto-search" class="" title="Search"></div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Contents</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link active">Week 1</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#week-1" id="toc-week-1" class="nav-link active" data-scroll-target="#week-1">Week 1</a>
+  <ul class="collapse">
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  </ul></li>
+  <li><a href="#week-2" id="toc-week-2" class="nav-link" data-scroll-target="#week-2">Week 2</a>
+  <ul class="collapse">
+  <li><a href="#summary-1" id="toc-summary-1" class="nav-link" data-scroll-target="#summary-1">Summary</a></li>
+  <li><a href="#application-1" id="toc-application-1" class="nav-link" data-scroll-target="#application-1">Application</a></li>
+  <li><a href="#reflection-1" id="toc-reflection-1" class="nav-link" data-scroll-target="#reflection-1">Reflection</a></li>
+  </ul></li>
+  <li><a href="#week-3" id="toc-week-3" class="nav-link" data-scroll-target="#week-3">Week 3</a>
+  <ul class="collapse">
+  <li><a href="#summary-2" id="toc-summary-2" class="nav-link" data-scroll-target="#summary-2">Summary</a></li>
+  <li><a href="#application-2" id="toc-application-2" class="nav-link" data-scroll-target="#application-2">Application</a></li>
+  <li><a href="#reflection-2" id="toc-reflection-2" class="nav-link" data-scroll-target="#reflection-2">Reflection</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
-<section id="summary" class="level1">
-<h1>Summary</h1>
+<section id="week-1" class="level1">
+<h1>Week 1</h1>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Amongst the many points addressed in the lectures were: 1. Earth Observation data uses electromagnetic radiation reflected or emitted from the object or area of interest that travels at the speed of light (because electromagnetic radiation is light itself!?!?). and 2. Some objects, or rather, electromagnetic radiation in a certain spectrum which cannot be viewed by human eyes can be detected by satellite sensors to allow human eyes to see them. Because colours are nothing but light, and light is nothing but electromagnetic radiation and electromagnetic radiation consists of different waves which is part of the electromagnetic spectrum ?!?! (this blows my mind as i write. Am I supposed to have known this as someone who finished primary education a number of years ago?)</p>
+<p><img src="light electromagnetic radiation.png" class="img-fluid"></p>
+<p>Take leaves of the trees (or vegetation) as an example. They can be viewed in the visible spectrum but also in the near-infrared light .</p>
+<p>Firstly, why leaves green? Wavelengths in the green region of the electromagnetic spectrum are reflected by pigments in the leaf’ (NASA Science). That’s why we see green leaves. But also ‘a plant with more chrlorophyll (pigment) will reflect more near-infrared energy than an unhealthy plant’ (NASA Science). So this is why with satellite imagery, we can use both the visible and invisible near-infrared spectrum to study vegetation.</p>
+<p>SCATTERING: Why is the sky black on the moon? (no atmosphere) Why is the sky blue? (short waves scattered) Why is the sky red when the sun goes down?</p>
+<p>Why is the ocean blue? - water absorbs the red yellow and green waves but reflects /scatters blue.</p>
+<p>Finally, there are two types of sensors to record electromagnetic radiation.</p>
+<p>1. Passive sensors record EMR reflected or emitted from the terrain.</p>
+<p>2. Active sensors such as LiDAR (on aircrafts), SAR or RADAR emit electromagnetic waves and record the amount of radiant flux (energy per unit of time) that travelled back to the sensors. These are used to develop the DEM, digital elevation model, using the speed of travel to measure the distance between the point on the terrain and the location of the sensor. SAR can see through clouds.</p>
+</section>
+<section id="application" class="level2">
+<h2 class="anchored" data-anchor-id="application">Application</h2>
 <ol type="1">
-<li><p>Week 1</p>
-<p>Summary</p>
-<p>Application</p>
-<p>Reflection</p></li>
-<li><p>Week 2</p></li>
-<li><p>Week 3</p></li>
-<li><p>Week 4</p></li>
-<li></li>
-<li><p>In summary, this book has no content whatsoever.</p></li>
+<li><p>Surface temperature</p>
+<p>‘Heat’ is such a bit topic these days. Many climate &amp; health research investigates the effect of ‘heat’ on health. How do we get land surface temperature data? I read that Land Surface Temperature is derived from thermal infrared data, which is in the wavelength range of 0.75 -15 μm. Which can be recorded by a multispectoral scanner on Landsat 8, MODIS, ASTER etc etc.</p></li>
+<li><p>In the field of global public health, malaria or infectious disease epidemiologists have been the forerunner in using geospatial data including Earth Observation data. For example, this paper by <span class="citation" data-cites="Brousse2020">Brousse et al. (<a href="#ref-Brousse2020" role="doc-biblioref">2020</a>)</span> uses the urban classification data, based on the Local Climate Zone map which is developed based on satellite imagery, to predict malaria prevalence.</p></li>
+<li><p>What drew me to Earth Observation data in the first place is my frustration due the lack of granularity of urban/rural classification in population-based health surveys. There is usually only two groups of urban or rural. But when I got to know that satellite imagery may be used to classify urban settlements into formal and informal, I got interested in exploring it. Different characteristics of informal settlements can be used in combination of ML classification tasks. <span class="citation" data-cites="kuffer2016">(<a href="#ref-kuffer2016" role="doc-biblioref">Kuffer, Pfeffer, and Sliuzas 2016</a>)</span></p></li>
 </ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>It has taken me some time to absorb this week’s concept. What has helped me understand is the fact that there is no such thing as colour, “colours do not exist, what exist is light”. Different objects reflect or absorb light in different ways (eg as I explained of green leaves) and satellite sensors and earth observation data take advantage of this fact.</p>
+</section>
+</section>
+<section id="week-2" class="level1">
+<h1>Week 2</h1>
+<section id="summary-1" class="level2">
+<h2 class="anchored" data-anchor-id="summary-1">Summary</h2>
+</section>
+<section id="application-1" class="level2">
+<h2 class="anchored" data-anchor-id="application-1">Application</h2>
+</section>
+<section id="reflection-1" class="level2">
+<h2 class="anchored" data-anchor-id="reflection-1">Reflection</h2>
+</section>
+</section>
+<section id="week-3" class="level1">
+<h1>Week 3</h1>
+<section id="summary-2" class="level2">
+<h2 class="anchored" data-anchor-id="summary-2">Summary</h2>
+</section>
+<section id="application-2" class="level2">
+<h2 class="anchored" data-anchor-id="application-2">Application</h2>
+</section>
+<section id="reflection-2" class="level2">
+<h2 class="anchored" data-anchor-id="reflection-2">Reflection</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Brousse2020" class="csl-entry" role="doc-biblioentry">
+Brousse, O, S Georganos, M Demuzere, S Dujardin, M Lennert, C Linard, R W Snow, W Thiery, and N P M van Lipzig. 2020. <span>“Can We Use Local Climate Zones for Predicting Malaria Prevalence Across Sub-Saharan African Cities?”</span> <em>Environmental Research Letters</em> 15 (12): 124051. <a href="https://doi.org/10.1088/1748-9326/abc996">https://doi.org/10.1088/1748-9326/abc996</a>.
+</div>
+<div id="ref-kuffer2016" class="csl-entry" role="doc-biblioentry">
+Kuffer, Monika, Karin Pfeffer, and Richard Sliuzas. 2016. <span>“Slums from Space<span></span>15 Years of Slum Mapping Using Remote Sensing.”</span> <em>Remote Sensing</em> 8 (6): 455. <a href="https://doi.org/10.3390/rs8060455">https://doi.org/10.3390/rs8060455</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->

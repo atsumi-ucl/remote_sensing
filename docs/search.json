@@ -4,14 +4,14 @@
     "href": "summary.html",
     "title": "",
     "section": "",
-    "text": "Summary\n\nWeek 1\nSummary\nApplication\nReflection\nWeek 2\nWeek 3\nWeek 4\n\nIn summary, this book has no content whatsoever.\n\n\n1 + 1\n\n[1] 2"
+    "text": "Amongst the many points addressed in the lectures were: 1. Earth Observation data uses electromagnetic radiation reflected or emitted from the object or area of interest that travels at the speed of light (because electromagnetic radiation is light itself!?!?). and 2. Some objects, or rather, electromagnetic radiation in a certain spectrum which cannot be viewed by human eyes can be detected by satellite sensors to allow human eyes to see them. Because colours are nothing but light, and light is nothing but electromagnetic radiation and electromagnetic radiation consists of different waves which is part of the electromagnetic spectrum ?!?! (this blows my mind as i write. Am I supposed to have known this as someone who finished primary education a number of years ago?)\n\nTake leaves of the trees (or vegetation) as an example. They can be viewed in the visible spectrum but also in the near-infrared light .\nFirstly, why leaves green? Wavelengths in the green region of the electromagnetic spectrum are reflected by pigments in the leaf’ (NASA Science). That’s why we see green leaves. But also ‘a plant with more chrlorophyll (pigment) will reflect more near-infrared energy than an unhealthy plant’ (NASA Science). So this is why with satellite imagery, we can use both the visible and invisible near-infrared spectrum to study vegetation.\nSCATTERING: Why is the sky black on the moon? (no atmosphere) Why is the sky blue? (short waves scattered) Why is the sky red when the sun goes down?\nWhy is the ocean blue? - water absorbs the red yellow and green waves but reflects /scatters blue.\nFinally, there are two types of sensors to record electromagnetic radiation.\n1. Passive sensors record EMR reflected or emitted from the terrain.\n2. Active sensors such as LiDAR (on aircrafts), SAR or RADAR emit electromagnetic waves and record the amount of radiant flux (energy per unit of time) that travelled back to the sensors. These are used to develop the DEM, digital elevation model, using the speed of travel to measure the distance between the point on the terrain and the location of the sensor. SAR can see through clouds.\n\n\n\n\nSurface temperature\n‘Heat’ is such a bit topic these days. Many climate & health research investigates the effect of ‘heat’ on health. How do we get land surface temperature data? I read that Land Surface Temperature is derived from thermal infrared data, which is in the wavelength range of 0.75 -15 μm. Which can be recorded by a multispectoral scanner on Landsat 8, MODIS, ASTER etc etc.\nIn the field of global public health, malaria or infectious disease epidemiologists have been the forerunner in using geospatial data including Earth Observation data. For example, this paper by Brousse et al. (2020) uses the urban classification data, based on the Local Climate Zone map which is developed based on satellite imagery, to predict malaria prevalence.\nWhat drew me to Earth Observation data in the first place is my frustration due the lack of granularity of urban/rural classification in population-based health surveys. There is usually only two groups of urban or rural. But when I got to know that satellite imagery may be used to classify urban settlements into formal and informal, I got interested in exploring it. Different characteristics of informal settlements can be used in combination of ML classification tasks. (Kuffer, Pfeffer, and Sliuzas 2016)\n\n\n\n\nIt has taken me some time to absorb this week’s concept. What has helped me understand is the fact that there is no such thing as colour, “colours do not exist, what exist is light”. Different objects reflect or absorb light in different ways (eg as I explained of green leaves) and satellite sensors and earth observation data take advantage of this fact."
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
     "title": "",
     "section": "",
-    "text": "Introduction\nThis is a learning diary of Atsumi Hirose\nI am looking forward to learning remote sensing on this module!\nA bit of my backgruond as a way of introduction. I have (doctoral and postdoctoral) training in epidemiology of maternal and newborn health. I also have a master degree in Demography. While I was a demography student more than 10 years ago, I was interested in how gender roles affect women’s decision to seek (delivery) care, mainly in South Asia (such as India, Pakistan, Afghanistan and so on).\nSince then I have moved on (a lot). More recently, my research interests expanded to include spatial health inequalities particularly spatial factors that affect maternal and newborn health in resource-limited countries in Asia and Sub-Saharan Africa. I have become increasingly interested in measuring environmental factors and including them in research investigation. For example, how the location pregnant women live in (urban slums) or physical distances between home and healthcare services contribute to health and pregnancy outcomes.\nTraditional health survey data do not provide sufficient information with good coverage to understand the environments where women live in, but they are usually georeferenced. In order to pursue my interest in spatial health inequalities, I have become interested to using Earth Observation data, thus, I am doing a master degree again.\nAnyway, I am looking forward to learning how to manipulate remotely sensed data including Google Earth Engine later in the term."
+    "text": "Introduction\n\n\n\nThis is a learning diary of Atsumi Hirose.\nI am looking forward to learning remote sensing on this module!\nA bit of my backgruond as a way of introduction. I have (doctoral and postdoctoral) training in the epidemiology of maternal and newborn health. My postdoctoral work mainly has focused on understanding health system factors to improve pregnancy outcomes in resource-limited countries in Africa and Asia.\nMy other strand of research which I hope to expand in the future is the investigation of geospatial factors that affect maternal and newborn health. For example, this so far has included how physical distances between home and healthcare services contribute to poor pregnancy outcomes and how the location pregnant women live in (urban slums) contribute to poor pregnancy outcomes.\nTraditional health survey data do not provide sufficient information with good coverage to understand the environments where women live in, but they are usually georeferenced. In order to pursue my interest in geospatial health inequalities, I have become interested to using Earth Observation data, this is why I am doing a master degree again. I am hoping to include environmental and climate-related factors into my future research.\nAnyway, I am looking forward to learning how to manipulate remotely sensed data including Google Earth Engine later in the term."
   },
   {
     "objectID": "references.html",
@@ -25,6 +25,62 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "Preface\nThis is an acknowledgement page. To be constructed."
+  },
+  {
+    "objectID": "summary.html#summary-1",
+    "href": "summary.html#summary-1",
+    "title": "",
+    "section": "Summary",
+    "text": "Summary"
+  },
+  {
+    "objectID": "summary.html#appliation-1",
+    "href": "summary.html#appliation-1",
+    "title": "",
+    "section": "Appliation",
+    "text": "Appliation"
+  },
+  {
+    "objectID": "summary.html#reflection-1",
+    "href": "summary.html#reflection-1",
+    "title": "",
+    "section": "Reflection",
+    "text": "Reflection"
+  },
+  {
+    "objectID": "summary.html#summary-2",
+    "href": "summary.html#summary-2",
+    "title": "",
+    "section": "Summary",
+    "text": "Summary"
+  },
+  {
+    "objectID": "summary.html#application",
+    "href": "summary.html#application",
+    "title": "",
+    "section": "Application",
+    "text": "Application"
+  },
+  {
+    "objectID": "summary.html#reflection-2",
+    "href": "summary.html#reflection-2",
+    "title": "",
+    "section": "Reflection",
+    "text": "Reflection\n\n\n\n\nBrousse, O, S Georganos, M Demuzere, S Dujardin, M Lennert, C Linard, R W Snow, W Thiery, and N P M van Lipzig. 2020. “Can We Use Local Climate Zones for Predicting Malaria Prevalence Across Sub-Saharan African Cities?” Environmental Research Letters 15 (12): 124051. https://doi.org/10.1088/1748-9326/abc996.\n\n\nKuffer, Monika, Karin Pfeffer, and Richard Sliuzas. 2016. “Slums from Space15 Years of Slum Mapping Using Remote Sensing.” Remote Sensing 8 (6): 455. https://doi.org/10.3390/rs8060455."
+  },
+  {
+    "objectID": "summary.html#application-1",
+    "href": "summary.html#application-1",
+    "title": "",
+    "section": "Application",
+    "text": "Application"
+  },
+  {
+    "objectID": "summary.html#application-2",
+    "href": "summary.html#application-2",
+    "title": "",
+    "section": "Application",
+    "text": "Application"
   }
 ]
