@@ -13,8 +13,19 @@ book:
     - references.qmd
 
 bibliography: references.bib
-
-
+website: 
+  sidebar: 
+    style: docked
+    search: true
+    contents: 
+      - section: "Basics"
+        contents: 
+        - index.qmd
+        - summary.qmd
+        - references.qmd
+     
+        
+        
 format:
   html:
     theme: cosmo
