@@ -14,21 +14,15 @@ book:
 
 bibliography: references.bib
 
-website: 
-  navbar: 
-    background: primary
-    search: true
-    left: 
-      - text: "Home"
-        file: index.qmd
-      - intro.qmd
-      - summary.qmd
-      - references.qmd
+
 format:
   html:
     theme: cosmo
+    toc: true
   pdf:
     documentclass: scrreprt
+---
 
+---
 editor: visual
 
