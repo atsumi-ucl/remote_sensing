@@ -7,7 +7,6 @@ book:
   author: "Atsumi Hirose"
   date: "01/02/2023"
   chapters:
-    - index.qmd
     - intro.qmd
     - summary.qmd
     - references.qmd
@@ -20,7 +19,7 @@ website:
     contents: 
       - section: "Contents"
         contents: 
-        - index.qmd
+        - intro.qmd
         - summary.qmd
         - references.qmd
      
