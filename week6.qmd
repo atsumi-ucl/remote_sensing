@@ -4,10 +4,9 @@ author: "Atsumi Hirose"
 editor: visual
 ---
 
-# Week 6
 
-## Summary
+# Summary
 
-## Application
+# Application
 
-## Reflection
+# Reflection

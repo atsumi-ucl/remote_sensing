@@ -8,7 +8,7 @@ book:
   date: "01/02/2023"
   chapters:
     - index.qmd
-    - summary.qmd
+    - week1.qmd
     - week2.qmd
     - week3.qmd
     - week4.qmd
@@ -28,7 +28,7 @@ website:
       - section: "Contents"
         contents: 
         - index.qmd
-        - summary.qmd
+        - week1.qmd
         - week2.qmd
         - week3.qmd
         - week4.qmd

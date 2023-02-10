@@ -3,10 +3,9 @@ title: "Week 9"
 author: "Atsumi Hirose"
 editor: visual
 ---
-# Week 9
 
-## Summary
+# Summary
 
-## Application
+# Application
 
-## Reflection
+# Reflection
