@@ -1,17 +1,15 @@
 # Introduction
 
-::: {style="float: right; position: relative;  "}
-![](images/DSC_2468%20(headshot)_resized.jpg){width="150"}
-:::
+Authored by : Atsumi Hirose ::: {style="float: right; position: relative;"} ![](images/DSC_2468%20(headshot)_resized.jpg){width="150"} :::
 
-This is a learning diary of Atsumi Hirose.
+This is my learning diary while studying on CASA0023 Remote Sensing Cities and Environments at UCL in Term 2 (2022-2023).
 
-I am looking forward to learning remote sensing on this module!
+A bit of my background as a way of introduction. I have (doctoral and postdoctoral) training in the epidemiology of maternal and newborn health. My postdoctoral work has mainly focused on understanding health system factors to improve maternal and newborn health in resource-limited countries in Africa and Asia.
 
-A bit of my backgruond as a way of introduction. I have (doctoral and postdoctoral) training in the epidemiology of maternal and newborn health. My postdoctoral work mainly has focused on understanding health system factors to improve pregnancy outcomes in resource-limited countries in Africa and Asia.
+But my other strand of research, which I hope to expand in the future, is the investigation of the impact of environmental factors on maternal and newborn health. This so far has included how physical distances between home and healthcare services contribute to poor health seeking behaviours and poor pregnancy outcomes.
 
-My other strand of research which I hope to expand in the future is the investigation of geospatial factors that affect maternal and newborn health. For example, this so far has included how physical distances between home and healthcare services contribute to poor pregnancy outcomes and how the location pregnant women live in (urban slums) contribute to poor pregnancy outcomes.
+In order to pursue my interest in environmental and geospatial impacts on maternal and newborn health further, I have become interested in using Earth Observation data. Traditional health survey data conducted in low- and middle-income countries (such as the Demographic and Health Surveys) do not provide sufficient information with good coverage to understand the environments where women live in, but they are georeferenced. So it is possible to spatially link health survey data with Earth Observation data to gain further understandings of the environmental factors at play.
 
-Traditional health survey data do not provide sufficient information with good coverage to understand the environments where women live in, but they are usually georeferenced. In order to pursue my interest in geospatial health inequalities, I have become interested to using Earth Observation data, this is why I am doing a master degree again. I am hoping to include environmental and climate-related factors into my future research.
+Anyway, this learning diary is part of the assessments for the module. It first summarises weekly learning contents before discussing their applications and my reflections. Wherever possible, I will link applications to the areas of my interest.
 
-Anyway, I am looking forward to learning how to manipulate remotely sensed data including Google Earth Engine later in the term.
+I am looking forward to learning how to manipulate remotely sensed data including Google Earth Engine later in the term.
