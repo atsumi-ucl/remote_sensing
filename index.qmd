@@ -1,5 +1,19 @@
-# Preface {.unnumbered}
+# Introduction {.unnumbered}
 
-This is an acknowledgement page. To be constructed. 
+ 
+
+Authored by : Atsumi Hirose ::: {style="float: right; position: relative;"} ![](images/DSC_2468%20(headshot)_resized.jpg){width="150"} :::
+
+This is my learning diary while studying on CASA0023 Remote Sensing Cities and Environments at UCL in Term 2 (2022-2023).
+
+A bit of my background as a way of introduction. I have (doctoral and postdoctoral) training in the epidemiology of maternal and newborn health. My postdoctoral work has mainly focused on understanding health system factors to improve maternal and newborn health in resource-limited countries in Africa and Asia.
+
+But my other strand of research, which I hope to expand in the future, is the investigation of the impact of environmental factors on maternal and newborn health. This so far has included how physical distances between home and healthcare services contribute to poor health seeking behaviours and poor pregnancy outcomes.
+
+In order to pursue my interest in environmental and geospatial impacts on maternal and newborn health further, I have become interested in using Earth Observation data. Traditional health survey data conducted in low- and middle-income countries (such as the Demographic and Health Surveys) do not provide sufficient information with good coverage to understand the environments where women live in, but they are georeferenced. So it is possible to spatially link health survey data with Earth Observation data to gain further understandings of the environmental factors at play.
+
+Anyway, this learning diary is part of the assessments for the module. It first summarises weekly learning contents before discussing their applications and my reflections. Wherever possible, I will link applications to the areas of my interest.
+
+I am looking forward to learning how to manipulate remotely sensed data including Google Earth Engine later in the term.
 
  
