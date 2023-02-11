@@ -4,7 +4,6 @@ author: "Atsumi Hirose"
 editor: visual
 ---
 
-
 # Summary
 
 Among the many points addressed in the lecture were: 1. Earth Observation data uses electromagnetic radiation reflected or emitted from the object or area of interest that travels at the speed of light (because electromagnetic radiation is light itself!?!?). and 2. Some objects, or rather, electromagnetic radiation in a certain spectrum which cannot be viewed by human eyes can be detected by satellite sensors to allow human eyes to see them. Because colours are nothing but light, and light is nothing but electromagnetic radiation and electromagnetic radiation consists of different waves which is part of the electromagnetic spectrum ?!?! And human eyes can only see only a small range within the electromagnetic radiation spectrum! (this blows my mind as I write. Am I supposed to have known this as someone who finished primary education a number of years ago?)
@@ -27,11 +26,15 @@ Finally, there are two types of sensors to record electromagnetic radiation.
 
 # Application
 
-1.  What drew me to Earth Observation data in the first place is my frustration due the lack of granularity of urban/rural classifications in population-based health surveys. There is usually only two groups of residence: urban or rural. But when I got to know that satellite imagery may be used to classify urban settlements into formal and informal settlements, I got interested in exploring this further. Different characteristics of informal settlements can be used in combination of ML classification tasks. [@kuffer2016]
+1.  Urban settlement classification
 
-For this week's practical session, I downloaded data from sentinel 2 of Kampala region (Uganda). With the 10 meter spectoral resolution, it was not possible to see a house, which limits the ability to separete houses in slum communities from those in non-slum communities. 
+    What drew me to Earth Observation data in the first place is my frustration due the lack of granularity of urban/rural classifications in population-based health surveys. There is usually only two groups of residence: urban or rural. But when I got to know that satellite imagery may be used to classify urban settlements into formal and informal settlements, I got interested in exploring this further. Different characteristics of informal settlements can be used in combination of ML classification tasks. [@kuffer2016]
 
-2.  In the field of global public health, malaria or infectious disease epidemiologists have been the forerunner in using geospatial data including Earth Observation data. For example, this paper by @Brousse2020 uses the urban classification data, based on the Local Climate Zone map which is developed based on satellite imagery, to predict malaria prevalence.
+    For this week's practical session, I downloaded data from sentinel 2 of Kampala region (Uganda). With the 10 meter spectoral resolution, it was not possible to see a house, which limits the ability to separete houses in slum communities from those in non-slum communities.
+
+2.  EO and global health
+
+    In the field of global public health, malaria or infectious disease epidemiologists have been the forerunner in using geospatial data including Earth Observation data. For example, this paper by @Brousse2020 uses the urban classification data, based on the Local Climate Zone map which is developed based on satellite imagery, to predict malaria prevalence.
 
 3.  Surface temperature
 
@@ -39,4 +42,4 @@ For this week's practical session, I downloaded data from sentinel 2 of Kampala 
 
 # Reflection
 
-It has taken me some time to absorb this week's concept. What has helped me understand is the fact that there is no such thing as colour, "colours do not exist, what exist is light". Different objects reflect or absorb light in different ways (eg as I explained of green leaves) and satellite sensors and earth observation data take advantage of this feature. The scatterplots of band 4 (red) and band 8 (near infrared) was interesting and makes sense now - something I didn't really understand before, but now I got it - because green vegetation will absorb red but reflect green, satellite sensors would capture a high value of green but a low value of red. 
+It has taken me some time to absorb this week's concept. What has helped me understand is the fact that there is no such thing as colour, "colours do not exist, what exist is light". Different objects reflect or absorb light in different ways (eg as I explained of green leaves) and satellite sensors and earth observation data take advantage of this feature. The scatterplots of band 4 (red) and band 8 (near infrared) was interesting and makes sense now - something I didn't really understand before, but now I got it - because green vegetation will absorb red but reflect green, satellite sensors would capture a high value of green but a low value of red.
