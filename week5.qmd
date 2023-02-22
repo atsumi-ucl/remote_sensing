@@ -6,6 +6,28 @@ editor: visual
 
 # Summary
 
+This week, we looked at Google Earth Engine (GEE).
+
+What I understood is that GEE has got many images (including Landsat, Sentinel, MODIS, ASTER, USDA NAIP) and other data (such as Landcover, weather, precipitation and atmosphere and Population data) [@gorelick2017] that can be accessed on GEE and it is very easy to download data. Often, this is done by just a click. Another key feature of GEE is how fast it can process.
+
+So that's all great. However, obviously, you will need to know javascript to take advantage of all that's offered in GEE. (So it is not that easy to use after all! LOL) GEE also provide Python API.
+
+To note, Scale parameter
+
+-   GEE aggregates the values based on your analysis.
+
+Some analysis tools introduced this week is "Reducer".
+
+Reducer
+
+-   to get zonal statistics, use the reduceRegion method of the image class. The output is a dictionary containing the statistics (specified in the function) for each spectoral band for the entire study area. See a code example [here](https://code.earthengine.google.com/6a141faca9dd3cbe671de705890d83ea).
+
+-   to get statistics of multiple regions, use the reduceRegions method of the image class. The output is the input features (like polygon) with reducer-applied values.
+
+-   to get statistics by neighbourhood, use reduceNeighborhood method
+
+-   Linear regressions are also considered 'reducer' in GEE!
+
 # Application
 
 # Reflection

@@ -43,3 +43,5 @@ Finally, there are two types of sensors to record electromagnetic radiation.
 # Reflection
 
 It has taken me some time to absorb this week's concept. What has helped me understand is the fact that there is no such thing as colour, "colours do not exist, what exist is light". Different objects reflect or absorb light in different ways (eg as I explained of green leaves) and satellite sensors and earth observation data take advantage of this feature. The scatterplots of band 4 (red) and band 8 (near infrared) was interesting and makes sense now - something I didn't really understand before, but now I got it - because green vegetation will absorb red but reflect green, satellite sensors would capture a high value of green but a low value of red.
+
+I wasn't able to see objects using an image with a10m spatial resolution, but maybe it does not matter?

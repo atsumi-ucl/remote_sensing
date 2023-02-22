@@ -168,7 +168,7 @@
 \date{}
 
 \begin{document}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, frame hidden, enhanced, breakable, boxrule=0pt, sharp corners, interior hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable, interior hidden, boxrule=0pt, sharp corners]}{\end{tcolorbox}}\fi
 
 \hypertarget{week-1}{%
 \chapter{Week 1}\label{week-1}}
@@ -176,29 +176,32 @@
 \hypertarget{summary}{%
 \section{Summary}\label{summary}}
 
-Amongst the many points addressed in the lectures were: 1. Earth
+Among the many points addressed in the lecture were: 1. Earth
 Observation data uses electromagnetic radiation reflected or emitted
 from the object or area of interest that travels at the speed of light
 (because electromagnetic radiation is light itself!?!?). and 2. Some
-objects /electromagnetic radiation in a certain spectrum which cannot be
-viewed by human eyes can be detected by satellite sensors to allow human
-eyes to see them. Because colours are nothing but light, and light is
-nothing but electromagnetic radiation and electromagnetic radiation
-consists of different waves which is part of the electromagnetic
-spectrum ?!?! (this blows my mind as i write. Am I supposed to have
-known this as someone who finished primary education a number of years
-ago?)
+objects, or rather, electromagnetic radiation in a certain spectrum
+which cannot be viewed by human eyes can be detected by satellite
+sensors to allow human eyes to see them. Because colours are nothing but
+light, and light is nothing but electromagnetic radiation and
+electromagnetic radiation consists of different waves which is part of
+the electromagnetic spectrum ?!?! And human eyes can only see only a
+small range within the electromagnetic radiation spectrum! (this blows
+my mind as I write. Am I supposed to have known this as someone who
+finished primary education a number of years ago?)
 
-eg. leaves of the trees (or vegetation) can be viewed in the
-near-infrared light.
+\includegraphics{light electromagnetic radiation.png}
 
-Why leaves green? Wavelengths in the green region of the electromagnetic
-spectrum are reflected by pigments in the leaf' (NASA Science). That's
-why we see green leaves. But also `a plant with more chrlorophyll
-(pigment) will reflect more near-infrared energy than an unhealthy
-plant' (NASA Science). So this is why with satellite imagery, we can use
-both the visible and invisible near-infrared spectrum to study
-vegetation.
+Take leaves or vegetation as an example. They can be viewed in the
+visible spectrum but also in the near-infrared light.
+
+Firstly, why leaves green? Wavelengths in the green region of the
+electromagnetic spectrum are reflected by pigments in the leaf' (NASA
+Science). That's why we see green leaves. But also `a plant with more
+chlorophyll (pigment) will reflect more near-infrared energy than an
+unhealthy plant' (NASA Science). So this is why with satellite imagery,
+we can use both the visible and invisible near-infrared spectrum to
+study vegetation.
 
 SCATTERING: Why is the sky black on the moon? (no atmosphere) Why is the
 sky blue? (short waves scattered) Why is the sky red when the sun goes
@@ -222,59 +225,45 @@ of the sensor. SAR can see through clouds.
 \hypertarget{application}{%
 \section{Application}\label{application}}
 
-In the field of global public health, malaria or infectious disease
-epidemiologists have been the forerunner in using geospatial data
-including Earth Observation data. For example, this paper by Brousse et
-al. (2020) uses the urban classification based on the Local Climate Zone
-map which is developed based on satellite imagery.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  What drew me to Earth Observation data in the first place is my
+  frustration due the lack of granularity of urban/rural classifications
+  in population-based health surveys. There is usually only two groups
+  of residence: urban or rural. But when I got to know that satellite
+  imagery may be used to classify urban settlements into formal and
+  informal settlements, I got interested in exploring this further.
+  Different characteristics of informal settlements can be used in
+  combination of ML classification tasks. (Kuffer, Pfeffer, and Sliuzas
+  2016)
+\item
+  In the field of global public health, malaria or infectious disease
+  epidemiologists have been the forerunner in using geospatial data
+  including Earth Observation data. For example, this paper by Brousse
+  et al. (2020) uses the urban classification data, based on the Local
+  Climate Zone map which is developed based on satellite imagery, to
+  predict malaria prevalence.
+\item
+  Surface temperature
 
-So far,
+  `Heat' is such a big topic these days. Many climate \& health research
+  investigates the effect of `heat' on health. How can we get land
+  surface temperature data? I read that Land Surface Temperature is
+  derived from thermal infrared data, which is in the wavelength range
+  of 0.75 -15 μm. This particular wavelength range can be recorded by a
+  multispectoral scanner on Landsat 8, MODIS, ASTER etc etc.
+\end{enumerate}
 
 \hypertarget{reflection}{%
 \section{Reflection}\label{reflection}}
 
-\hypertarget{week-2}{%
-\chapter{Week 2}\label{week-2}}
-
-\hypertarget{summary-1}{%
-\section{Summary}\label{summary-1}}
-
-\hypertarget{application-1}{%
-\section{Application}\label{application-1}}
-
-\hypertarget{reflection-1}{%
-\section{Reflection}\label{reflection-1}}
-
-\hypertarget{week-3}{%
-\chapter{Week 3}\label{week-3}}
-
-\hypertarget{summary-2}{%
-\section{Summary}\label{summary-2}}
-
-\hypertarget{application-2}{%
-\section{Application}\label{application-2}}
-
-\hypertarget{reflection-2}{%
-\section{Reflection}\label{reflection-2}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Week 1
-
-  Summary
-
-  Application
-
-  Reflection
-\item
-  Week 2
-\item
-  Week 3
-\item
-  Week 4
-\item
-\end{enumerate}
+It has taken me some time to absorb this week's concept. What has helped
+me understand is the fact that there is no such thing as colour,
+``colours do not exist, what exist is light''. Different objects reflect
+or absorb light in different ways (eg as I explained of green leaves)
+and satellite sensors and earth observation data take advantage of this
+fact.
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
@@ -284,6 +273,12 @@ W Snow, W Thiery, and N P M van Lipzig. 2020. {``Can We Use Local
 Climate Zones for Predicting Malaria Prevalence Across Sub-Saharan
 African Cities?''} \emph{Environmental Research Letters} 15 (12):
 124051. \url{https://doi.org/10.1088/1748-9326/abc996}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-kuffer2016}{}}%
+Kuffer, Monika, Karin Pfeffer, and Richard Sliuzas. 2016. {``Slums from
+Space{\textemdash}15 Years of Slum Mapping Using Remote Sensing.''}
+\emph{Remote Sensing} 8 (6): 455.
+\url{https://doi.org/10.3390/rs8060455}.
 
 \end{CSLReferences}
 
