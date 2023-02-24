@@ -49,46 +49,6 @@
   \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
 
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{241,243,245}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
-\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
@@ -174,6 +134,8 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
+  pdftitle={Introduction},
+  pdfauthor={Atsumi Hirose},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -181,30 +143,57 @@
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
-\author{}
+\title{Introduction}
+\author{Atsumi Hirose}
 \date{}
 
 \begin{document}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable, boxrule=0pt, sharp corners, interior hidden]}{\end{tcolorbox}}\fi
+\maketitle
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, enhanced, sharp corners, interior hidden, breakable, frame hidden]}{\end{tcolorbox}}\fi
 
-\hypertarget{preface}{%
-\chapter*{Preface}\label{preface}}
-\addcontentsline{toc}{chapter}{Preface}
+\hypertarget{what-is-this}{%
+\chapter{What is this?}\label{what-is-this}}
 
-This is a Quarto book.
+This is my learning diary while studying on CASA0023 Remote Sensing
+Cities and Environments at UCL in Term 2 (2022-2023).
 
-To learn more about Quarto books visit
-\url{https://quarto.org/docs/books}.
+\hypertarget{who-am-i}{%
+\chapter{Who am I?}\label{who-am-i}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\DecValTok{1} \SpecialCharTok{+} \DecValTok{1}
-\end{Highlighting}
-\end{Shaded}
+::: \{style=``float: right; position: relative;''\}
+\includegraphics[width=1.5625in,height=\textheight]{images/DSC_2468 (headshot)_resized.jpg}
+::: A bit of my background as a way of introduction. I have (doctoral
+and postdoctoral) training in the epidemiology of maternal and newborn
+health. My postdoctoral work has mainly focused on understanding health
+system factors to improve maternal and newborn health in
+resource-limited countries in Africa and Asia.
 
-\begin{verbatim}
-[1] 2
-\end{verbatim}
+But my other strand of research, which I hope to expand in the future,
+is the investigation of the impact of environmental factors on maternal
+and newborn health. This so far has included how physical distances
+between home and healthcare services contribute to poor health seeking
+behaviours and poor pregnancy outcomes.
+
+In order to pursue my interest in environmental and geospatial impacts
+on maternal and newborn health further, I have become interested in
+using Earth Observation data. Traditional health survey data conducted
+in low- and middle-income countries (such as the Demographic and Health
+Surveys) do not provide sufficient information with good coverage to
+understand the environments where women live in, but they are
+georeferenced. So it is possible to spatially link health survey data
+with Earth Observation data to gain further understandings of the
+environmental factors at play.
+
+\hypertarget{how-is-it-organised}{%
+\chapter{How is it organised?}\label{how-is-it-organised}}
+
+Anyway, this learning diary, which is part of the assessments for the
+module, first summarises weekly learning contents before discussing
+their applications and my reflections. Wherever possible, I will link
+applications to the areas of my interest.
+
+I am looking forward to learning how to manipulate remotely sensed data
+including Google Earth Engine later in the term.
 
 
 

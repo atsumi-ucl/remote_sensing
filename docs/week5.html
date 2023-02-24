@@ -21,6 +21,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -141,10 +160,8 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./week9.html" class="sidebar-item-text sidebar-link">Week 9</a>
-  </div>
-</li>
+  week9.qmd
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
@@ -195,14 +212,35 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level1">
 <h1>Summary</h1>
+<p>This week, we looked at Google Earth Engine (GEE).</p>
+<p>What I understood is that GEE has got many images (including Landsat, Sentinel, MODIS, ASTER, USDA NAIP) and other data (such as Landcover, weather, precipitation and atmosphere and Population data) <span class="citation" data-cites="gorelick2017">(<a href="#ref-gorelick2017" role="doc-biblioref">Gorelick et al. 2017</a>)</span> that can be accessed on GEE and it is very easy to download data. Often, this is done by just a click. Another key feature of GEE is how fast it can process.</p>
+<p>So that’s all great. However, obviously, you will need to know javascript to take advantage of all that’s offered in GEE. (So it is not that easy to use after all! LOL) GEE also provide Python API.</p>
+<p>To note, Scale parameter</p>
+<ul>
+<li>GEE aggregates the values based on your analysis.</li>
+</ul>
+<p>Some analysis tools introduced this week is “Reducer”.</p>
+<p>Reducer</p>
+<ul>
+<li><p>to get zonal statistics, use the reduceRegion method of the image class. The output is a dictionary containing the statistics (specified in the function) for each spectoral band for the entire study area. See a code example <a href="https://code.earthengine.google.com/6a141faca9dd3cbe671de705890d83ea">here</a>.</p></li>
+<li><p>to get statistics of multiple regions, use the reduceRegions method of the image class. The output is the input features (like polygon) with reducer-applied values.</p></li>
+<li><p>to get statistics by neighbourhood, use reduceNeighborhood method</p></li>
+<li><p>Linear regressions are also considered ‘reducer’ in GEE!</p></li>
+</ul>
 </section>
 <section id="application" class="level1">
 <h1>Application</h1>
+<p>To be added</p>
 </section>
 <section id="reflection" class="level1">
 <h1>Reflection</h1>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-gorelick2017" class="csl-entry" role="doc-biblioentry">
+Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. <span>“Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone.”</span> <em>Remote Sensing of Environment</em> 202 (December): 18–27. <a href="https://doi.org/10.1016/j.rse.2017.06.031">https://doi.org/10.1016/j.rse.2017.06.031</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
