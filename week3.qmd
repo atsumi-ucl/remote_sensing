@@ -6,6 +6,28 @@ editor: visual
 
 # Summary
 
+This week, we looked at raw data and different correction types to be applied to them in order to rectify errors or inaccuracies caused by various issues of the sensors or interference of the atmosphere or topography. The three main types of corrections to deal with the errors are:  (1) Geometric correction (2) Atmospheric correction and (3) Orthorectification (or topographic correction).
+
+## Geometric correction
+
+Geometric corrections can be applied when there are positional errors introduced by the remote sensing system. A number of ground control points are identified across the regions of interest (x' and y'). The same points also identified on a satellite imagery (x and y). Then a relationship between the coordinates must be established usually in a linear relationship (x = a0 + a1X' + a2Y' and y = b+ b1x' + b2Y'). Then this relationship is applied to all the pixels. I find this similar to the flattening of earth to create a map.
+
+ 
+
+## Atmospheric correction
+
+Atmospheric correction can be applied when errors are related to (1) atmospheric attenuation, ie loss of radiation due to scattering and absorption in the atmosphere or (2) topographic attenuation or loss or radiation due to the topography. Topographic attenuation relates to the influence of topography (such as rugged mountainous regions) on the signals recorded by satellite sensors.
+
+There are two types of correction methods: absolute and relative atmospheric correction. Absolute atmospheric correction aims to "turn  the digital brightness values recorded by a remote sensing system into scaled surface reflectance values" (Jensen), but this requires knowledge about atmospheric conditions across the atmosphere in the imaged area, the "sensor spectral profile" and the 'models' to estimate the effect of atmospheric attenuation. If any of these are not available then, relative atmospheric correction may be applied. Relative atmospheric correction may be applied by first finding an area with no reflectance (black area) such as deep water and recording the Digital Number and subtracting it (called 'the Dark Object Subtraction method') from all the data. This is equivalent to shifting the histogram  to the left so that the data ranges from 0.  
+
+But Jensen suggests that there are necessary and unnecessary atmospheric correction. It is unnecessary when change detections are performed on a single date of data but it is necessary if training data span across multiple dates or space.
+
+ 
+
+## Orthorectification correction
+
+Orthorectification correction may be done to create an image where each pixel in the image is viewed as if it was collected from directly above (nadir view).
+
 # Application
 
 # Reflection
