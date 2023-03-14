@@ -160,9 +160,6 @@ div.csl-indent {
   </div>
 </li>
           <li class="sidebar-item">
-  week9.qmd
-  </li>
-          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
@@ -220,17 +217,18 @@ div.csl-indent {
 <li>GEE aggregates the values based on your analysis.</li>
 </ul>
 <p>Some analysis tools introduced this week is “Reducer”.</p>
-<p>Reducer</p>
+<p>Reducer types:</p>
 <ul>
 <li><p>to get zonal statistics, use the reduceRegion method of the image class. The output is a dictionary containing the statistics (specified in the function) for each spectoral band for the entire study area. See a code example <a href="https://code.earthengine.google.com/6a141faca9dd3cbe671de705890d83ea">here</a>.</p></li>
 <li><p>to get statistics of multiple regions, use the reduceRegions method of the image class. The output is the input features (like polygon) with reducer-applied values.</p></li>
 <li><p>to get statistics by neighbourhood, use reduceNeighborhood method</p></li>
-<li><p>Linear regressions are also considered ‘reducer’ in GEE!</p></li>
+<li><p>Linear regressions are also considered ‘reducer’ in GEE</p></li>
 </ul>
+<p>I looked at Ollie’s land cover classification work that identifies informal settlements. The GEE codes by Ollie is here <a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcode.earthengine.google.com%2Fe19f8d1a3bcc99f7860a01c75044cd5c&amp;data=05%7C01%7Co.ballinger%40ucl.ac.uk%7C533fc19dcb66428ae85a08dab8c7b8cf%7C1faf88fea9984c5b93c9210a11d9a5c2%7C0%7C0%7C638025465191971215%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=tfMgPnLFoxLALEvvyPpYD%2FkOzIkaa6%2BxX0K07IgLTU4%3D&amp;reserved=0">https://code.earthengine.google.com/e19f8d1a3bcc99f7860a01c75044cd5c</a>.</p>
+<p>Modifying the codes provided in the practical materials, I managed to export results of the random forest algorithm and open it in QGIS. The codes that added at the end of Ollie’s codes are below.</p>
 </section>
 <section id="application" class="level1">
 <h1>Application</h1>
-<p>To be added</p>
 </section>
 <section id="reflection" class="level1">
 <h1>Reflection</h1>

@@ -112,6 +112,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./presentation.html" class="sidebar-item-text sidebar-link">Casa0023 week 2</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./week3.html" class="sidebar-item-text sidebar-link active">Week 3</a>
   </div>
 </li>
@@ -198,15 +203,15 @@ ul.task-list li input[type="checkbox"] {
 <p>This week, we looked at raw data and different correction types to be applied to them in order to rectify errors or inaccuracies caused by various issues of the sensors or interference of the atmosphere or topography. The three main types of corrections to deal with the errors are: &nbsp;(1) Geometric correction (2) Atmospheric correction and (3) Orthorectification (or topographic correction).</p>
 <section id="geometric-correction" class="level2">
 <h2 class="anchored" data-anchor-id="geometric-correction">Geometric correction</h2>
-<p>Geometric corrections can be applied when there are positional errors introduced by the remote sensing system. A number of ground control points are identified across the regions of interest (x’ and y’). The same points also identified on a satellite imagery (x and y). Then a relationship between the coordinates must be established usually in a linear relationship (x = a0 + a1X’ + a2Y’ and y = b+ b1x’ + b2Y’). Then this relationship is applied to all the pixels. I find this similar to the flattening of earth to create a map.</p>
+<p>Geometric corrections can be applied when there are positional errors introduced by the remote sensing system. To correct them, a number of ground control points are identified across the regions of interest (x’ and y’). The same points are also identified on a satellite imagery (x and y). Then a relationship between the coordinates must be established, usually in a linear relationship (x = a0 + a1X’ + a2Y’ and y = b+ b1x’ + b2Y’). Then this relationship is applied to all the pixels. I find this similar to the flattening of earth to create a map.</p>
 <p>&nbsp;</p>
 </section>
 <section id="atmospheric-correction" class="level2">
 <h2 class="anchored" data-anchor-id="atmospheric-correction">Atmospheric correction</h2>
 <p>Atmospheric correction can be applied when errors are related to (1) atmospheric attenuation, ie loss of radiation due to scattering and absorption in the atmosphere or (2) topographic attenuation or loss or radiation due to the topography. Topographic attenuation relates to the influence of topography (such as rugged mountainous regions) on the signals recorded by satellite sensors.</p>
-<p>There are two types of correction methods: absolute and relative atmospheric correction. Absolute atmospheric correction aims to “turn&nbsp; the digital brightness values recorded by a remote sensing system into scaled surface reflectance values” (Jensen), but this requires knowledge about atmospheric conditions across the atmosphere in the imaged area, the “sensor spectral profile” and the ‘models’ to estimate the effect of atmospheric attenuation. If any of these are not available then, relative atmospheric correction may be applied. Relative atmospheric correction may be applied by first finding an area with no reflectance (black area) such as deep water and recording the Digital Number and subtracting it (called ‘the Dark Object Subtraction method’) from all the data. This is equivalent to shifting the histogram&nbsp; to the left so that the data ranges from 0. &nbsp;</p>
-<p>But Jensen suggests that there are necessary and unnecessary atmospheric correction. It is unnecessary when change detections are performed on a single date of data but it is necessary if training data span across multiple dates or space.</p>
-<p>&nbsp;</p>
+<p>There are two types of correction methods: absolute and relative atmospheric correction. Absolute atmospheric correction aims to “turn&nbsp; the digital brightness values recorded by a remote sensing system into scaled surface reflectance values” (Jensen), but this requires knowledge about atmospheric conditions across the atmosphere in the imaged area, the “sensor spectral profile” and the ‘models’ to estimate the effect of atmospheric attenuation. If any of these are not available, then relative atmospheric correction may be applied.</p>
+<p>Relative atmospheric correction may be applied by first finding an area with no reflectance (black area) such as deep water and recording the Digital Number and subtracting it (called ‘the Dark Object Subtraction method’) from all the data. This is equivalent to shifting the histogram&nbsp; to the left so that the data ranges from 0. &nbsp;</p>
+<p>But Jensen suggests that there are necessary and unnecessary atmospheric correction. It is unnecessary when change detections are performed on a single date of data but it is necessary if training data span across multiple dates or space.&nbsp;</p>
 </section>
 <section id="orthorectification-correction" class="level2">
 <h2 class="anchored" data-anchor-id="orthorectification-correction">Orthorectification correction</h2>

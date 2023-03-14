@@ -142,11 +142,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week9.html" class="sidebar-item-text sidebar-link">Week 9</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
@@ -195,6 +190,19 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level1">
 <h1>Summary</h1>
+<p>We looked at object-based image analysis which is a hybrid of arts and science</p>
+<p>The essence of the method is that through iterations, a pixel is turned into a collection of similar pixels, which becomes an object and is used for analysis instead of a pixel.</p>
+<p>The other thing we looked at is accuracy assessment. Normally a simple two-by-two matrix of true classes and classified classes is used, which I believe is called a ‘confusion’ matrix. The two-by-two matrix shows the number of true positives, false positive, true negative and false negative. There are user accuracy and producer accuracy. UA assess the number of true positive divided by the number of true positive and false positive. PA equals the number of true positive divided by true positive and true negative (or vice versa). Another method is to use Kappa.</p>
+<p>How do we get the accuracy statistics?</p>
+<ul>
+<li><p>Can use Cross validation (which uses a different subset of data for testing and take the average accuracy statistics across different test and training splits)</p></li>
+<li><p>Leave one out (this take one data out from the training dataset of n data points and train the model by using n training data sets) and take average</p></li>
+</ul>
+<p>What to consider</p>
+<ul>
+<li>Remember that near things are more related than distant things. This should be taken into account when selecting regions of interests. For validation datasets, pixerls too near to the araea used for training datasets should be excluded or a distance should be determined such that the validation data should not be taken from any areas within the distance boundary from the training datasets.</li>
+</ul>
+<p>Also talked about how to select training datasets and the value of selecting something invariant over time.</p>
 </section>
 <section id="application" class="level1">
 <h1>Application</h1>
