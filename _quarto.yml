@@ -10,6 +10,7 @@ book:
     - index.qmd
     - week1.qmd
     - week2.qmd
+    - presentation.Rmd
     - week3.qmd
     - week4.qmd
     - week5.qmd
@@ -29,6 +30,7 @@ website:
         - index.qmd
         - week1.qmd
         - week2.qmd
+        - presentation.Rmd
         - week3.qmd
         - week4.qmd
         - week5.qmd
