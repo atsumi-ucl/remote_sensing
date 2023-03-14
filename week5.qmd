@@ -18,7 +18,7 @@ To note, Scale parameter
 
 Some analysis tools introduced this week is "Reducer".
 
-Reducer
+Reducer types:
 
 -   to get zonal statistics, use the reduceRegion method of the image class. The output is a dictionary containing the statistics (specified in the function) for each spectoral band for the entire study area. See a code example [here](https://code.earthengine.google.com/6a141faca9dd3cbe671de705890d83ea).
 
@@ -26,10 +26,30 @@ Reducer
 
 -   to get statistics by neighbourhood, use reduceNeighborhood method
 
--   Linear regressions are also considered 'reducer' in GEE!
+-   Linear regressions are also considered 'reducer' in GEE
+
+I looked at Ollie's land cover classification work that identifies informal settlements. The GEE codes by Ollie is here [https://code.earthengine.google.com/e19f8d1a3bcc99f7860a01c75044cd5c](https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcode.earthengine.google.com%2Fe19f8d1a3bcc99f7860a01c75044cd5c&data=05%7C01%7Co.ballinger%40ucl.ac.uk%7C533fc19dcb66428ae85a08dab8c7b8cf%7C1faf88fea9984c5b93c9210a11d9a5c2%7C0%7C0%7C638025465191971215%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=tfMgPnLFoxLALEvvyPpYD%2FkOzIkaa6%2BxX0K07IgLTU4%3D&reserved=0).
+
+Modifying the codes provided in the practical materials, I managed to export results of the random forest algorithm and open it in QGIS. The codes that added at the end of Ollie's codes are below.
+
+```{javascript}
+var tzadar = ee.FeatureCollection('projects/casa0023week5/assets/gadm41_TZA_1')
+    .filter('GID_1 == "TZA.2_1"');
+var bounds = tzadar.geometry();
+
+
+Export.image.toDrive({
+  image: rf2,
+  description: 'TZN informal settlements',
+  scale:10,
+  crs: 'EPSG:21096',
+  maxPixels: 100E10,
+  region: bounds
+
+});
+
+```
 
 # Application
-
-To be added
 
 # Reflection

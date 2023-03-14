@@ -8,21 +8,23 @@ editor: visual
 
 I picked Ahmedabad, India as a case study city.
 
-## The policy 
+## The policy
+
 Based on the excess mortality from the 2010 heatwave, the city has developed four key strategies, amongst which are: - to 'initiate an early warning system and inter-agency coordination' to alert residents of predicted high and extreme temperatures and - to reduce heath exposure and promote adaptive measures by launching new efforts such as mapping of high risk areas of the city, or communication on prevention methods, access to cooling spaces. The Plan does have a focus on individuals who are most at risk and alerting them of predicted high and extreme temperatures and promoting adaptive measures. The policy document specified that those at risk are slum communities, outdoor workers, elderly and children.
 
-## Challenges 
-However, amongst the challenges that the city would face are: 
-1. Identifying people of slum communities may be a challenge as the slum areas are often not mapped, and constantly evolving and expanding in the global south. 
-2. Identifying urban areas with predicted high or extreme temperatures across the city may be a challenge.
+## Challenges
+
+However, amongst the challenges that the city would face are: 1. Identifying people of slum communities may be a challenge as the slum areas are often not mapped, and constantly evolving and expanding in the global south. 2. Identifying urban areas with predicted high or extreme temperatures across the city may be a challenge.
 
 # Application
 
-## Solutions 
-1. Use a high spatial-resolution (5m or less such as Geo-Eye 1 or World View 3 or SPOT6 or SPOT7) satellite imagery to classify land use in urban areas, in particular land use for slums and non-slum residential areas. After identify slum areas, it is possible to carry out necessary adaptive measures such as increasing awareness and community outreach. But this approach needs to be done in a way that is not discriminatory, so that those living in the slum communities will not be negatively affected, such as eviction. 
-2. Use Landsat 8's Thermal Infrared Sensors (TIRS) to obtain surface temperature and identify areas that recorded high or extreme temperatures in the past
+## Solutions
 
-## Link to global agandas 
+1.  Use a high spatial-resolution (5m or less such as Geo-Eye 1 or World View 3 or SPOT6 or SPOT7) satellite imagery to classify land use in urban areas, in particular land use for slums and non-slum residential areas. After identify slum areas, it is possible to carry out necessary adaptive measures such as increasing awareness and community outreach. But this approach needs to be done in a way that is not discriminatory, so that those living in the slum communities will not be negatively affected, such as eviction.
+2.  Use Landsat 8's Thermal Infrared Sensors (TIRS) to obtain surface temperature and identify areas that recorded high or extreme temperatures in the past
+
+## Link to global agandas
+
 Proposed solutions will contribute to SDG 11 to make cities inclusive, safe, resilient, and sustainable. One of the targets associated with the SDG11 goal is to "increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015-2030, holistic disaster risk management at all levels". By identifying areas of high or extreme temperatures in the past and monitoring temperature trend over time, and incorporating adaptive measures, the city will contribute to the SDG11 target.
 
 # Reflection
