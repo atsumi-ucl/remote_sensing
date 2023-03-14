@@ -6,6 +6,24 @@ editor: visual
 
 # Summary
 
+This week, we examined the urban heat island including its impacts and how impacts may be minimised by effective policies. UHI is caused by the urban area generating and keeping heats and the relative cooler temperature in outside urban areas. We looked at both (1) global policies and initiatives and (2) how global policies are implemented locally.
+
+\(1\) We looked at the [Beat the Heat handbook](https://www.unep.org/ndc/resources/report/beating-heat-sustainable-cooling-handbook-cities) which showcase 80 options that cities can adapt to beat the heat.
+
+\(2\) We also looked at the "superblock model" where mini-blocs surrounded by the roads are reserved for pedestrians to enjoy and the vehicles are not allowed in. This is similar to the 15 minute city idea. The example in Spain resulted in a reduction in noise level, nitrogen oxide, and an increase in economic activity.
+
+\(3\) The idea of green corridors (planting trees) is another example.
+
+\(4\) The Turn Down the Heat strategy are another examples.
+
 # Application
 
+Chakrabortey - ambient temperature and surface temperature weakly correlated??
+
+Intra-urban heat island, disparities within cities
+
 # Reflection
+
+Many ideas exist to reduce the temperature in urban areas. Often technical skills are needed to implement the idea to reduce the temperature effectively. For example, where to plant trees.
+
+Should policies be implemented for equality, equities, or justice?
