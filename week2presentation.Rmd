@@ -1,0 +1,117 @@
+---
+title: "Casa0023 week 2"
+subtitle: "<br/>Overview of Landsat-8"
+author: "Atsumi Hirose"
+institute: "University College London CASA"
+date: "2023/01/17 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r echo=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = TRUE,
+           dashed = FALSE,
+           no.print.fields=c("doi", "url", "urldate", "issn"))
+myBib <- ReadBib("./references.bib", check = FALSE)
+```
+
+---
+
+# Summary
+
+## Overview of Landsat 8
+
+-   Launched on 11th February 2013
+
+-   Collect an archive of medium resolution multispectral image data
+
+-   Initially planned for not less than 5 years
+
+-   Aims \> Data consistent with data from the earlier Landsat missions and \> Distribution of Landsat data products to the public
+
+---
+
+# Major technological feature of Landsat-8
+
+## Pushbroom technology
+
+-   being able to dwell longer on a particular part of the terrain
+
+-   no moving mirror
+
+-   Thus more accurate measurement
+
+---
+ 
+# Two sensors of Landsat-9
+## Operational Land Imager (OLI)
+
+-   Multispectral  sensor including: visible, near infrared and shortwave infrared portions (Band 1 through Band 9)
+
+-   Additional bands for water and clouds detection
+
+-   Collection of land-surface data
+
+-   Spatial resolution = 15m x 15m (panchromatic) and 30m x 30m (multispectral)
+-   consistent with previous missions (Landsat TM of Landsat 4 and Landsat 5 and ETM+ of Landsat 7)
+
+---
+
+# Two Sensors of Landsat-8 (2)
+## Thermal infrared sensor (TIRS)
+-   Two long wavelength bands (band 10 and band 11)
+
+-   Collection of land surface temperature
+
+-   Spatial resolution at Nadir of 100 m x 100 m
+
+---
+
+# Application (1)
+
+## Automatically map land cover features
+
+-   Urban built-up areas are mapped:
+-   Methods include:
+
+1.  Using the normalised difference built-up index (NDBI), or
+
+2.  Modifications of the NDBI (eg. `r Citet(myBib,"bhatti2014built")` or `r Citet(myBib,"bouhennache2019new")`)
+
+---
+
+# Application (2)
+
+## Landsat-8 TIRS to retrieve Land Surface Temperature (LST).
+
+-   `r Citet(myBib,"jimenez2014land")` take advantage of the thermal infrared sensors on board Landsat-8
+
+-   'Split-window' algorithm to retrieve LST
+
+---
+
+# Reflection
+
+-   Lots of modelling/transformation needed to derive the information required for various purposes \> eg earth surface temperature or urban built-up areas
+
+-   I have seen 'built-up' grid used in global health research to understand the effect of urbanisation on health (or the association between urbanisation and health outcomes).
+
+-   Those studies are actually looking at the association between the Normalised Difference Built-up Index and health outcomes as a proxyn for 'urbanisation'.
+
+---
+
+## References
+
+```{r refs, echo=FALSE, results="asis"}
+PrintBibliography(myBib)
+```
