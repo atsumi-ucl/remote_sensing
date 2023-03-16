@@ -14,7 +14,7 @@ Machine learning - science of computer learning process - is used for the classi
 
 # Application
 
-For the classification of landcover for informal settlement communities, various data/sensors and techniques can be used on GEE. Matarira et al., used Sentinel 2A image collection on GEE with a Random Forest algorithm for classification \[- \@matarira2022\]. The authors say that they chose the Random Forest algorithm because urban area classification has got high dimensional feature spaces and the RF is found to be robust in urban complex environments.
+For the classification of landcover for informal settlement communities, various data/sensors and techniques can be used on GEE. Matarira et al., used Sentinel 2A image collection on GEE with a Random Forest algorithm for classification [@matarira2022a]. The authors say that they chose the Random Forest algorithm because urban area classification has got high dimensional feature spaces and the RF is found to be robust in urban complex environments.
 
 # Reflection
 
