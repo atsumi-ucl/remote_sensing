@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Atsumi Hirose">
+<meta name="dcterms.date" content="2023-01-17">
 
-<title>Week 6</title>
+<title>Casa0023 week 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
-}
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
 }
 </style>
 
@@ -88,7 +70,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Week 6</h1>
+      <h1 class="quarto-secondary-nav-title">Casa0023 week 2</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -146,7 +128,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week6.html" class="sidebar-item-text sidebar-link active">Week 6</a>
+  <a href="./week6.html" class="sidebar-item-text sidebar-link">Week 6</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -175,9 +157,34 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#overview-of-landsat-8" id="toc-overview-of-landsat-8" class="nav-link" data-scroll-target="#overview-of-landsat-8">Overview of Landsat 8</a></li>
+  </ul></li>
+  <li><a href="#major-technological-feature-of-landsat-8" id="toc-major-technological-feature-of-landsat-8" class="nav-link" data-scroll-target="#major-technological-feature-of-landsat-8">Major technological feature of Landsat-8</a>
+  <ul class="collapse">
+  <li><a href="#pushbroom-technology" id="toc-pushbroom-technology" class="nav-link" data-scroll-target="#pushbroom-technology">Pushbroom technology</a></li>
+  </ul></li>
+  <li><a href="#two-sensors-of-landsat-8-1" id="toc-two-sensors-of-landsat-8-1" class="nav-link" data-scroll-target="#two-sensors-of-landsat-8-1">Two Sensors of Landsat-8 (1)</a>
+  <ul class="collapse">
+  <li><a href="#operational-land-imager-oli" id="toc-operational-land-imager-oli" class="nav-link" data-scroll-target="#operational-land-imager-oli">Operational Land Imager (OLI)</a></li>
+  </ul></li>
+  <li><a href="#two-sensors-of-landsat-8-2" id="toc-two-sensors-of-landsat-8-2" class="nav-link" data-scroll-target="#two-sensors-of-landsat-8-2">Two Sensors of Landsat-8 (2)</a>
+  <ul class="collapse">
+  <li><a href="#thermal-infrared-sensor-tirs" id="toc-thermal-infrared-sensor-tirs" class="nav-link" data-scroll-target="#thermal-infrared-sensor-tirs">Thermal infrared sensor (TIRS)</a></li>
+  </ul></li>
+  <li><a href="#application-1" id="toc-application-1" class="nav-link" data-scroll-target="#application-1">Application (1)</a>
+  <ul class="collapse">
+  <li><a href="#automatically-map-land-cover-features" id="toc-automatically-map-land-cover-features" class="nav-link" data-scroll-target="#automatically-map-land-cover-features">Automatically map land cover features</a></li>
+  </ul></li>
+  <li><a href="#application-2" id="toc-application-2" class="nav-link" data-scroll-target="#application-2">Application (2)</a>
+  <ul class="collapse">
+  <li><a href="#landsat-8-tirs-to-retrieve-land-surface-temperature-lst." id="toc-landsat-8-tirs-to-retrieve-land-surface-temperature-lst." class="nav-link" data-scroll-target="#landsat-8-tirs-to-retrieve-land-surface-temperature-lst.">Landsat-8 TIRS to retrieve Land Surface Temperature (LST).</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -186,20 +193,34 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Week 6</h1>
+<h1 class="title d-none d-lg-block">Casa0023 week 2</h1>
+<p class="subtitle lead"><br>Overview of Landsat-8</p>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    Atsumi Hirose 
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            University College London CASA
+          </p>
+      </div>
+    </div>
 
 <div class="quarto-title-meta">
 
+      
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-             <p>Atsumi Hirose </p>
-          </div>
+      <p class="date">January 17, 2023</p>
+    </div>
   </div>
-    
   
     
   </div>
@@ -207,27 +228,103 @@ div.csl-indent {
 
 </header>
 
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'RefManageR' was built under R version 4.2.2</code></pre>
+</div>
+</div>
+<hr>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<p>This week, we looked at classification of remote sensed data for various applications.</p>
-<p>Land cover land use classification is a classic example of classification of remote sensed data. We looked at how different data or sensors could be used and different techniques could be applied, depending on the objectives of studies.</p>
-<p>Machine learning - science of computer learning process - is used for the classification of remote sensed data. There are various learning types: CART (classification and regression trees) where the Gini impurity (which by definition is the probability of incorrectly classifying a randomly chosen element in a dataset if it was randomly labelled according to the distribution of labels in the subset) is used to decide the best split.</p>
+<section id="overview-of-landsat-8" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-landsat-8">Overview of Landsat 8</h2>
+<ul>
+<li><p>Launched on 11th February 2013</p></li>
+<li><p>Collect an archive of medium resolution multispectral image data</p></li>
+<li><p>Initially planned for not less than 5 years</p></li>
+<li><p>Aims &gt; Data consistent with data from the earlier Landsat missions and &gt; Distribution of Landsat data products to the public</p></li>
+</ul>
+<hr>
 </section>
-<section id="application" class="level1">
-<h1>Application</h1>
-<p>For the classification of landcover for informal settlement communities, various data/sensors and techniques can be used on GEE. Matarira et al., used Sentinel 2A image collection on GEE with a Random Forest algorithm for classification <span class="citation" data-cites="matarira2022a">(<a href="#ref-matarira2022a" role="doc-biblioref">Matarira, Mutanga, and Naidu 2022</a>)</span>. The authors say that they chose the Random Forest algorithm because urban area classification has got high dimensional feature spaces and the RF is found to be robust in urban complex environments.</p>
+</section>
+<section id="major-technological-feature-of-landsat-8" class="level1">
+<h1>Major technological feature of Landsat-8</h1>
+<section id="pushbroom-technology" class="level2">
+<h2 class="anchored" data-anchor-id="pushbroom-technology">Pushbroom technology</h2>
+<ul>
+<li><p>being able to dwell longer on a particular part of the terrain</p></li>
+<li><p>no moving mirror</p></li>
+<li><p>Thus more accurate measurement</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="two-sensors-of-landsat-8-1" class="level1">
+<h1>Two Sensors of Landsat-8 (1)</h1>
+<section id="operational-land-imager-oli" class="level2">
+<h2 class="anchored" data-anchor-id="operational-land-imager-oli">Operational Land Imager (OLI)</h2>
+<ul>
+<li><p>Multispectral sensor including, visible, near infrared and shortwave infrared portions (band 1 through 9)</p></li>
+<li><p>The additional bands for water and clouds detection</p></li>
+<li><p>Collection of land-surface data</p></li>
+<li><h2 id="spatial-resolution-15m-x-15-m-panchromatic-and-30m-x-30-m-multispectral-consistent-with-previous-missions-landsat-tm-of-landsat-4-and-landsat-5-and-etm-of-landsat-7" class="anchored">Spatial resolution: 15m x 15 m (panchromatic) and 30m x 30 m (multispectral), consistent with previous missions (Landsat TM of Landsat 4 and Landsat 5 and ETM+ of Landsat 7)</h2></li>
+</ul>
+</section>
+</section>
+<section id="two-sensors-of-landsat-8-2" class="level1">
+<h1>Two Sensors of Landsat-8 (2)</h1>
+<section id="thermal-infrared-sensor-tirs" class="level2">
+<h2 class="anchored" data-anchor-id="thermal-infrared-sensor-tirs">Thermal infrared sensor (TIRS)</h2>
+<ul>
+<li><p>Two long wavelength bands (band 10 and band 11)</p></li>
+<li><p>Collection of land surface temperature</p></li>
+<li><p>Spatial resolution at Nadir of 100 m x 100 m</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="application-1" class="level1">
+<h1>Application (1)</h1>
+<section id="automatically-map-land-cover-features" class="level2">
+<h2 class="anchored" data-anchor-id="automatically-map-land-cover-features">Automatically map land cover features</h2>
+<ul>
+<li>Urban built-up areas are mapped:</li>
+<li>Methods include:</li>
+</ul>
+<ol type="1">
+<li><p>Using the normalised difference built-up index (NDBI), or</p></li>
+<li><p>Modifications of the NDBI (eg. <a name="cite-bhatti2014built"></a><a href="#bib-bhatti2014built">Bhatti and Tripathi (2014)</a> or <a name="cite-bouhennache2019new"></a><a href="#bib-bouhennache2019new">Bouhennache, Bouden, Taleb-Ahmed, and Cheddad (2019)</a>)</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="application-2" class="level1">
+<h1>Application (2)</h1>
+<section id="landsat-8-tirs-to-retrieve-land-surface-temperature-lst." class="level2">
+<h2 class="anchored" data-anchor-id="landsat-8-tirs-to-retrieve-land-surface-temperature-lst.">Landsat-8 TIRS to retrieve Land Surface Temperature (LST).</h2>
+<ul>
+<li><p><a name="cite-jimenez2014land"></a><a href="#bib-jimenez2014land">Jiménez-Muñoz, Sobrino, Skoković, Mattar, and Cristobal (2014)</a> take advantage of the thermal infrared sensors on board Landsat-8</p></li>
+<li><p>‘Split-window’ algorithm to retrieve LST</p></li>
+</ul>
+<hr>
+</section>
 </section>
 <section id="reflection" class="level1">
 <h1>Reflection</h1>
-<p>Very useful to actually see how land cover land use classification may be done.</p>
-<p>What I found strange in the practical material for this week was that the training data was created from GEE. I think this is acceptable if one has good knowledge about the study area. But I think I would rather visit the study area with a GPS handset and collect the coordinates for each class. This way, I will make sure that the polygons I am labelling as informal settlements are actually informal settlements.</p>
+<ul>
+<li><p>Lots of modelling/transformation needed to derive the information required for various purposes &gt; eg earth surface temperature or urban built-up areas</p></li>
+<li><p>I have seen ‘built-up’ grid used in global health research to understand the effect of urbanisation on health (or the association between urbanisation and health outcomes).</p></li>
+<li><p>Those studies are actually looking at the association between the Normalised Difference Built-up Index and health outcomes as a proxyn for ‘urbanisation’.</p></li>
+</ul>
+<hr>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p><a name="bib-bhatti2014built"></a><a href="#cite-bhatti2014built">Bhatti, S. S. and N. K. Tripathi</a> (2014). “Built-up area extraction using Landsat 8 OLI imagery”. In: <em>GIScience &amp; remote sensing</em> 51.4, pp.&nbsp;445-467.</p>
+<p><a name="bib-bouhennache2019new"></a><a href="#cite-bouhennache2019new">Bouhennache, R., T. Bouden, A. Taleb-Ahmed, et al.</a> (2019). “A new spectral index for the extraction of built-up land features from Landsat 8 satellite imagery”. In: <em>Geocarto International</em> 34.14, pp.&nbsp;1531-1551.</p>
+<p><a name="bib-jimenez2014land"></a><a href="#cite-jimenez2014land">Jiménez-Muñoz, J. C., J. A. Sobrino, D. Skoković, et al.</a> (2014). “Land surface temperature retrieval methods from Landsat-8 thermal infrared sensor data”. In: <em>IEEE Geoscience and remote sensing letters</em> 11.10, pp. 1840-1843.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-matarira2022a" class="csl-entry" role="doc-biblioentry">
-Matarira, Dadirai, Onisimo Mutanga, and Maheshvari Naidu. 2022. <span>“Google Earth Engine for Informal Settlement Mapping: A Random Forest Classification Using Spectral and Textural Information.”</span> <em>Remote Sensing</em> 14 (20): 5130. <a href="https://doi.org/10.3390/rs14205130">https://doi.org/10.3390/rs14205130</a>.
-</div>
-</div>
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -25,51 +25,50 @@ class: center, middle, inverse, title-slide
 ### University College London CASA
 ]
 .date[
-### 2023/01/17 (updated: 2023-03-14)
+### 2023/01/17 (updated: 2023-03-15)
 ]
 
 ---
+
 
 
 ```
 ## Warning: package 'RefManageR' was built under R version 4.2.2
 ```
 
- 
-
 ---
 
 # Summary
+
 ## Overview of Landsat 8
-- Launched on 11th February 2013
 
-- Collect an archive of medium resolution multispectral image data
+-   Launched on 11th February 2013
 
-- Initially planned for not less than 5 years 
+-   Collect an archive of medium resolution multispectral image data
 
-- Aims 
-&gt; Data consistent with data from the earlier Landsat missions and 
-&gt; Distribution of Landsat data products to the public
+-   Initially planned for not less than 5 years
 
+-   Aims \&gt; Data consistent with data from the earlier Landsat missions and \&gt; Distribution of Landsat data products to the public
 
 ---
 
 # Major technological feature of Landsat-8
+
 ## Pushbroom technology
-- being able to dwell longer on a particular part of the terrain
 
-- no moving mirror
+-   being able to dwell longer on a particular part of the terrain
 
-- Thus more accurate measurement
- 
+-   no moving mirror
+
+-   Thus more accurate measurement
+
 ---
 # Two Sensors of Landsat-8 (1)
 ## Operational Land Imager (OLI)
 - Multispectral sensor including:
-&gt; visible, 
+&gt; visible
 &gt; near infrared and 
-&gt; shortwave infrared portions 
-&gt; band 1 through 9
+&gt; shortwave infrared portions (band 1 through 9)
 
 - The additional bands for water and clouds detection
 
@@ -83,44 +82,52 @@ class: center, middle, inverse, title-slide
 ---
 
 # Two Sensors of Landsat-8 (2)
-## Thermal infrared sensor (TIRS) 
-- Two long wavelength bands (band 10 and band 11)
 
-- Collection of land surface temperature
+## Thermal infrared sensor (TIRS)
 
-- Spatial resolution at Nadir of 100 m x 100 m
+-   Two long wavelength bands (band 10 and band 11)
 
----
+-   Collection of land surface temperature
 
-# Application (1) 
-## Automatically map land cover features 
-- Urban built-up areas are mapped:
-- Methods include:
-1. Using the normalised difference built-up index (NDBI), or 
-
-2. Modifications of the NDBI (eg. &lt;a name=cite-bhatti2014built&gt;&lt;/a&gt;[Bhatti and Tripathi (2014)](#bib-bhatti2014built) or &lt;a name=cite-bouhennache2019new&gt;&lt;/a&gt;[Bouhennache, Bouden, Taleb-Ahmed, and Cheddad (2019)](#bib-bouhennache2019new))
+-   Spatial resolution at Nadir of 100 m x 100 m
 
 ---
 
-# Application (2) 
-## Landsat-8 TIRS to retrieve Land Surface Temperature (LST). 
--	 &lt;a name=cite-jimenez2014land&gt;&lt;/a&gt;[Jiménez-Muñoz, Sobrino, Skoković, Mattar, and Cristobal (2014)](#bib-jimenez2014land) take advantage of the thermal infrared sensors on board Landsat-8
+# Application (1)
 
--	‘Split-window’ algorithm to retrieve LST
+## Automatically map land cover features
+
+-   Urban built-up areas are mapped:
+-   Methods include:
+
+1.  Using the normalised difference built-up index (NDBI), or
+
+2.  Modifications of the NDBI (eg. &lt;a name=cite-bhatti2014built&gt;&lt;/a&gt;[Bhatti and Tripathi (2014)](#bib-bhatti2014built) or &lt;a name=cite-bouhennache2019new&gt;&lt;/a&gt;[Bouhennache, Bouden, Taleb-Ahmed, and Cheddad (2019)](#bib-bouhennache2019new))
 
 ---
- 
+
+# Application (2)
+
+## Landsat-8 TIRS to retrieve Land Surface Temperature (LST).
+
+-   &lt;a name=cite-jimenez2014land&gt;&lt;/a&gt;[Jiménez-Muñoz, Sobrino, Skoković, Mattar, and Cristobal (2014)](#bib-jimenez2014land) take advantage of the thermal infrared sensors on board Landsat-8
+
+-   'Split-window' algorithm to retrieve LST
+
+---
+
 # Reflection
-- Lots of modelling/transformation needed to derive the information required for various purposes
-&gt; eg earth surface temperature or urban built-up areas
 
-- I have seen ‘built-up’ grid used in global health research to understand the effect of urbanisation on health (or the association between urbanisation and health outcomes).
+-   Lots of modelling/transformation needed to derive the information required for various purposes \&gt; eg earth surface temperature or urban built-up areas
 
-- Those studies are actually looking at the association between the Normalised Difference Built-up Index and health outcomes as a proxyn for 'urbanisation'. 
+-   I have seen 'built-up' grid used in global health research to understand the effect of urbanisation on health (or the association between urbanisation and health outcomes).
+
+-   Those studies are actually looking at the association between the Normalised Difference Built-up Index and health outcomes as a proxyn for 'urbanisation'.
 
 ---
+
 ## References
- 
+
 &lt;a name=bib-bhatti2014built&gt;&lt;/a&gt;[Bhatti, S. S. and N. K.
 Tripathi](#cite-bhatti2014built) (2014). "Built-up area extraction
 using Landsat 8 OLI imagery". In: _GIScience &amp; remote sensing_ 51.4,
@@ -136,7 +143,6 @@ D. Skoković, et al.](#cite-jimenez2014land) (2014). "Land surface
 temperature retrieval methods from Landsat-8 thermal infrared sensor
 data". In: _IEEE Geoscience and remote sensing letters_ 11.10, pp.
 1840-1843.
- 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
