@@ -10,7 +10,7 @@ This week, we looked at Google Earth Engine (GEE).
 
 What I understood is that GEE has got many images (including Landsat, Sentinel, MODIS, ASTER, USDA NAIP) and other data (such as Landcover, weather, precipitation and atmosphere and Population data) [@gorelick2017] that can be accessed on GEE and it is very easy to download data. Often, this is done by just a click. Another key feature of GEE is how fast it can process.
 
-So that's all great. However, obviously, you will need to know javascript to take advantage of all that's offered in GEE. (So it is not that easy to use after all! LOL) GEE also provide Python API.
+So that's all great. However, obviously, you will need to know javascript to take advantage of all that's offered in GEE. (So it is not that easy to use after all! ) GEE also provide Python API.
 
 To note, Scale parameter
 
@@ -28,12 +28,18 @@ Reducer types:
 
 -   Linear regressions are also considered 'reducer' in GEE
 
-I looked at Ollie's land cover classification work that identifies informal settlements. The GEE codes by Ollie is here [https://code.earthengine.google.com/e19f8d1a3bcc99f7860a01c75044cd5c](https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcode.earthengine.google.com%2Fe19f8d1a3bcc99f7860a01c75044cd5c&data=05%7C01%7Co.ballinger%40ucl.ac.uk%7C533fc19dcb66428ae85a08dab8c7b8cf%7C1faf88fea9984c5b93c9210a11d9a5c2%7C0%7C0%7C638025465191971215%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=tfMgPnLFoxLALEvvyPpYD%2FkOzIkaa6%2BxX0K07IgLTU4%3D&reserved=0).
-
-Modifying the codes provided in the practical materials, I managed to export results of the random forest algorithm and open it in QGIS. The codes that added at the end of Ollie's codes are below.
-
-
-
 # Application
 
+I explored what work has been done using GEE for global health research.
+
+1.  For the implementation of a Malaria warning system which predicts future malaria risk, environmental data are necessary because they have effects on the distribution of malaria vectors. But such data is often not easily accessible for those who are not familiar with remote sensing data (such as epidemiologists or public health practitioners).
+
+    To assist public health practitioners, Wimberly et al., developed an application using GEE to download data needed for malaria risk prediction models [@wimberly2022]. The application allows the users to enter the date range of their interest and automatically download the environmental data without writing codes. Factors associated with malaria risk such as precipitation and land surface temperature as well as the indices sensitive to vegetation and moisture content such as NDVI, SAVI and EVI can be downloaded.
+
+2.  I found a (rather dubious) study investigating urbanicity and brain behaviour using GEE[@xu2021]. The authors assessed urbanicity using 9 different measures obtained from GEE such as night-time light (NL), normalized difference built-up index (NDBI), normalized difference water index (NDWI), normalized difference vegetation index (NDVI) and five measures derived from land cover map. But it was not clear from the paper which sensors were selected for the indices.
+
 # Reflection
+
+I think for those who are able to write codes, GEE is great. However, those who are not, there is still a barrier to using GEE (as clear from the Wimberly paper [@wimberly2022], and thus by extension a barrier to using emote sensing data for researchers outside the discipline of remote sensing. Thankfully, I think I can consider myself as someone who can write codes after taking two python modules. So I am looking forward to exploring this more in the summer when I work on my dissertation.
+
+# References

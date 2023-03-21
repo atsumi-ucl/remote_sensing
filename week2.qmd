@@ -6,6 +6,6 @@ editor: visual
 
 # Summary
 
-# Application
+This week, I made a presentation on Landsat 8. Here is [a link](https://atsumi-ucl.github.io/remote_sensing/presentation.html#1)
 
-# Reflection
+# 

@@ -21,6 +21,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -112,11 +131,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./presentation.html" class="sidebar-item-text sidebar-link">Casa0023 week 2</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./week3.html" class="sidebar-item-text sidebar-link active">Week 3</a>
   </div>
 </li>
@@ -168,7 +182,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#orthorectification-correction" id="toc-orthorectification-correction" class="nav-link" data-scroll-target="#orthorectification-correction">Orthorectification correction</a></li>
   </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -220,11 +237,27 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application" class="level1">
 <h1>Application</h1>
+<p>Landsat 8 products are already atmospherically corrected <span class="citation" data-cites="vermote2016">(<a href="#ref-vermote2016" role="doc-biblioref">Vermote et al. 2016</a>)</span>. However it is still a challenge to atmospherically correct satellite imagery over inland water. and scholars who deal with water/ocean develop their own algorithms for atmospheric corrections <span class="citation" data-cites="ilori2019">(<a href="#ref-ilori2019" role="doc-biblioref">Ilori, Pahlevan, and Knudby 2019</a>)</span> and appears to be an important area of research.</p>
 </section>
 <section id="reflection" class="level1">
 <h1>Reflection</h1>
+<p>I can understand that correction is important when one uses multiple images to detect changes over time or one is studying changes in ocean. But it is not needed for many tasks. For example, if one is conducting a landcover classification task, subtracting a value uniformly from the entire image has no effect on the variance of the distribution of data. So it is not necessary to conduct atmospheric correction. As long as the training data and the data to be classified are from the same relative scale, it is not needed. Furthremore, Song et al., showed that other more compilicated methods did not improve performance of classification and recommends Dark Object Subtraction methods <span class="citation" data-cites="song2001">(<a href="#ref-song2001" role="doc-biblioref">Song et al. 2001</a>)</span>.</p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-ilori2019" class="csl-entry" role="doc-biblioentry">
+Ilori, Christopher, Nima Pahlevan, and Anders Knudby. 2019. <span>“Analyzing Performances of Different Atmospheric Correction Techniques for Landsat 8: Application for Coastal Remote Sensing.”</span> <em>Remote Sensing</em> 11 (4): 469. <a href="https://doi.org/10.3390/rs11040469">https://doi.org/10.3390/rs11040469</a>.
+</div>
+<div id="ref-song2001" class="csl-entry" role="doc-biblioentry">
+Song, Conghe, Curtis E. Woodcock, Karen C. Seto, Mary Pax Lenney, and Scott A. Macomber. 2001. <span>“Classification and Change Detection Using Landsat TM Data.”</span> <em>Remote Sensing of Environment</em> 75 (2): 230–44. <a href="https://doi.org/10.1016/s0034-4257(00)00169-3">https://doi.org/10.1016/s0034-4257(00)00169-3</a>.
+</div>
+<div id="ref-vermote2016" class="csl-entry" role="doc-biblioentry">
+Vermote, Eric, Chris Justice, Martin Claverie, and Belen Franch. 2016. <span>“Preliminary Analysis of the Performance of the Landsat 8/OLI Land Surface Reflectance Product.”</span> <em>Remote Sensing of Environment</em> 185 (November): 46–56. <a href="https://doi.org/10.1016/j.rse.2016.04.008">https://doi.org/10.1016/j.rse.2016.04.008</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->

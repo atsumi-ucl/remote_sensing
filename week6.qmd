@@ -10,10 +10,14 @@ This week, we looked at classification of remote sensed data for various applica
 
 Land cover land use classification is a classic example of classification of remote sensed data. We looked at how different data or sensors could be used and different techniques could be applied, depending on the objectives of studies.
 
-Machine learning - science of computer learning process - is used for the classification of remote sensed data. There are various learning types: CART (classification and regression trees) where the Gini impurity is used to decide which attribute is the top of the tree,
+Machine learning - science of computer learning process - is used for the classification of remote sensed data. There are various learning types: CART (classification and regression trees) where the Gini impurity (which by definition is the probability of incorrectly classifying a randomly chosen element in a dataset if it was randomly labelled according to the distribution of labels in the subset) is used to decide the best split.
 
 # Application
 
-For the classification of landcover for slum communities, various data/sensors and techniques have been used.
+For the classification of landcover for informal settlement communities, various data/sensors and techniques can be used on GEE. Matarira et al., used Sentinel 2A image collection on GEE with a Random Forest algorithm for classification [@matarira2022a]. The authors say that they chose the Random Forest algorithm because urban area classification has got high dimensional feature spaces and the RF is found to be robust in urban complex environments.
 
 # Reflection
+
+Very useful to actually see how land cover land use classification may be done.
+
+What I found strange in the practical material for this week was that the training data was created from GEE. I think this is acceptable if one has good knowledge about the study area. But I think I would rather visit the study area with a GPS handset and collect the coordinates for each class. This way, I will make sure that the polygons I am labelling as informal settlements are actually informal settlements.

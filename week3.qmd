@@ -30,4 +30,10 @@ Orthorectification correction may be done to create an image where each pixel in
 
 # Application
 
+Landsat 8 products are already atmospherically corrected [@vermote2016]. However it is still a challenge to atmospherically correct satellite imagery over inland water. and scholars who deal with water/ocean develop their own algorithms for atmospheric corrections [@ilori2019] and appears to be an important area of research.
+
 # Reflection
+
+I can understand that correction is important when one uses multiple images to detect changes over time or one is studying changes in ocean. But it is not needed for many tasks. For example, if one is conducting a landcover classification task, subtracting a value uniformly from the entire image has no effect on the variance of the distribution of data. So it is not necessary to conduct atmospheric correction. As long as the training data and the data to be classified are from the same relative scale, it is not needed. Furthremore, Song et al., showed that other more compilicated methods did not improve performance of classification and recommends Dark Object Subtraction methods [@song2001].
+
+## References
