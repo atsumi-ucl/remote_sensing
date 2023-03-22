@@ -6,23 +6,34 @@ editor: visual
 
 # Summary
 
-We looked at object-based image analysis which is a hybrid of arts and science
+We looked at object-based image analysis which is a hybrid of arts and science, and this was followed by accuracy assessment of classification tasks.Below is a summary.
 
-The essence of the method is that through iterations, a pixel is turned into a collection of similar pixels, which becomes an object and is used for analysis instead of a pixel.
+## Object-based image analysis
 
-The other thing we looked at is accuracy assessment. Normally a simple two-by-two matrix of true classes and classified classes is used, which I believe is called a 'confusion' matrix. The two-by-two matrix shows the number of true positives, false positive, true negative and false negative. There are user accuracy and producer accuracy. UA assess the number of true positive divided by the number of true positive and false positive. PA equals the number of true positive divided by true positive and true negative (or vice versa). Another method is to use Kappa.
+The essence of the method is that through iterations, a pixel is turned into a collection of similar pixels, which becomes an object and is used for analysis instead of a pixel. According to Jensen, this method is often used for the analysis of high spatial resolution imagery such as GeoEye-1 or WorldView-2.
 
-How do we get the accuracy statistics?
+## Accuracy assessment
 
--   Can use Cross validation (which uses a different subset of data for testing and take the average accuracy statistics across different test and training splits)
+The other thing we looked at is accuracy assessment. Normally a simple two-by-two matrix of true classes and classified classes is used, which I believe is called a 'confusion' matri but Jensen calls it an error matrix [@jensen2014]. Whatever it is called, the two-by-two matrix shows the number of true positives, false positive, true negative and false negative. But for multiclass classification tasks, the number of rows and columns can be equal to the number of classes. *Overall accuracy* can be calculated as the number of labels correctly identified, divided by the total number of labels.
 
--   Leave one out (this take one data out from the training dataset of n data points and train the model by using n training data sets) and take average
+There are other accuracy measures too. *User accuracy* (UA) is calculated as the total number of correctly classified pixels, divided by the total number of pixels classified in that category. UA assess the number \$\$of true positive divided by the number of true positive and false positive. (I guess this is the perspective from the user of the map) *Producer accuracy* is calculated as the total number of correct pixels in a class divided by the total number of pixels of that class from the ground reference data. PA equals the number of true positive divided by true positive and true negative. These are very intuitive.
 
-What to consider
+Another method is to use Kappa. Kappa is given by:
 
--   Remember that near things are more related than distant things. This should be taken into account when selecting regions of interests. For validation datasets, pixerls too near to the araea used for training datasets should be excluded or a distance should be determined such that the validation data should not be taken from any areas within the distance boundary from the training datasets.
+$$
+ k = N \sum_{i=1}^n X_ij -
+$$
 
-Also talked about how to select training datasets and the value of selecting something invariant over time.
+## Validation methods (How do we get the accuracy statistics?)
+
+-   K-fold Cross validation (which uses a different subset of data for testing and take the average accuracy statistics across different test and training splits)
+
+-   Leave one out (this takes one data out from the training dataset of n data points and train the model by using n-1 training data sets) and take average
+
+### What to consider
+
+-   Remember that near things are more related than distant things. This should be taken into account when selecting regions of interests. For validation datasets, pixels too near to the areas used for training datasets should be excluded or a distance should be determined such that the validation data should not be taken from any areas within the distance boundary from the training datasets.
+-   Also talked about how to select training datasets and the value of selecting something invariant over time.
 
 # Application
 
