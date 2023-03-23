@@ -42,4 +42,4 @@ I explored what work has been done using GEE for global health research.
 
 I think for those who are able to write codes, GEE is great. However, those who are not, there is still a barrier to using GEE (as clear from the Wimberly paper [@wimberly2022], and thus by extension a barrier to using emote sensing data for researchers outside the discipline of remote sensing. Thankfully, I think I can consider myself as someone who can write codes after taking two python modules. So I am looking forward to exploring this more in the summer when I work on my dissertation.
 
-# References
+## References

@@ -223,18 +223,18 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="training-data">Training data</h2>
 <p>For machine learning supervised classification tasks, one will need training data with labels. All classes should be represented. According to Jensen, the rule of thumb is that you will need a minimum of 10xN pixels of training data if training data are being extracted from N bands <span class="citation" data-cites="jensen2014">(<a href="#ref-jensen2014" role="doc-biblioref">Jensen 2016</a>)</span>. That doesn’t seem a lot.</p>
 <p>According to Jensen, training data may be obtained by fieldwork, interpretation of aerial photography, map analysis and personal experience, but ideally each training site should be visited and its perimeter or centroid coordinates are measured directly with a GPS. Another method Jensen introduces is to use a seed programme, which finds pixels with spectral characteristics similar to the original seed pixel the analyst specifies. This way, the analyst will have collected homogeneous training set.</p>
-<p>So depending on the available resources, one can visit the study area with a GPS handset and collect the coordinates for each class, or study arial image and create a training dataset.</p>
+<p>So depending on the available resources, one can visit the study area with a GPS handset and collect the coordinates for each class, which of course requires more resources, or study arial image and create a training dataset, which is desk-based and thus cheaper.</p>
 </section>
 <section id="feature-selectionselection-of-optimum-bands" class="level2">
 <h2 class="anchored" data-anchor-id="feature-selectionselection-of-optimum-bands">Feature selection/selection of optimum bands</h2>
-<p>A next step would be to select which bands to use. Graphical methods such as feature space plots (such as the one plotted in week 1) can be used to decide which bands to use.</p>
+<p>A next step would be to select which bands to use. Graphical methods such as feature space plots (such as the one plotted in week 1) can be used to decide which bands to use. This approach perhaps is useful if one knows the features of the area of interest very well and can interpret the clustering of certain values in a qualitative way.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="images/B4B8 scatter plot-02.png" class="img-fluid figure-img" width="549"></p>
 <p></p><figcaption class="figure-caption">Feature space plot of B4 vs B8</figcaption><p></p>
 </figure>
 </div>
-<p>Equally, statistical methods such as the Principal Component Analysis may be used to select the optimum bands that maximise the amount of variance explained by a new set of imagery.</p>
+<p>Equally, statistical methods such as the Principal Component Analysis may be used to select the optimum bands that maximise the amount of variance explained by a new set of imagery. This I think can be quite powerful if one has so many bands to explore. It would take forever if one plots (two dimensional) feature space like above for each possible pair of features when there are 50 bands!</p>
 </section>
 <section id="machine-learning-algorithms" class="level2">
 <h2 class="anchored" data-anchor-id="machine-learning-algorithms">Machine learning algorithms</h2>
@@ -247,14 +247,14 @@ div.csl-indent {
 <ol type="1">
 <li><p>I liked the authors (Eg. Leonita et al <span class="citation" data-cites="leonita2018">(<a href="#ref-leonita2018" role="doc-biblioref">2018</a>)</span>) who studied the morphology (forms and structures) or ontology (nature) of local slums and incoporated it into the selection of bands</p>
 <p>For example, they observed high density, lack of vegetation so used NDVI and built-up density index. In total, they used 78 bands from Pleiades. The authors used the Sequential Forward Selection method to select features, which is another method which wasn’t discussed this week. They then used Random Forest and Support Vector Machine as classification algorithms.</p></li>
-<li><p>Matarira et al., used Sentinel 2A image collection on GEE with a Random Forest algorithm for classification <span class="citation" data-cites="matarira2022a">(<a href="#ref-matarira2022a" role="doc-biblioref">Matarira, Mutanga, and Naidu 2022</a>)</span>. Their feature selection was mainly based on literature review and included a total of 42 features.</p></li>
+<li><p>Matarira et al., used Sentinel 2A image collection on GEE with a Random Forest algorithm for classification <span class="citation" data-cites="matarira2022a">(<a href="#ref-matarira2022a" role="doc-biblioref">Matarira, Mutanga, and Naidu 2022</a>)</span>. Their feature selection was mainly based on literature review and included a total of 42 features. This is of course acceptable but I would have like to see local context and local slum ontology incorporated in selecting the features.</p></li>
 </ol>
 </section>
 <section id="reflection" class="level1">
 <h1>Reflection</h1>
 <p>It was <strong>very</strong> useful to actually see how land cover land use classification may be done. My question I had in week 1 (whether it is a problem that I couldn’t see houses in the 10m spatial image) was resolved to some extent. Generally speaking, this depends on what you would want to classify. If training data come from a field visit rather than creating it from analysing aerial imagery, then it probably doesn’t matter whether the analyst could visually identify objects in order to label them. Of course, if a pixel includes different classes, the value on each pixel would not be very precise which I imagine would affect classification accuracy.</p>
 <p>In the practical material for this week, the training data was created from GEE. I found it difficult to create training data in this way because I didn’t know landcover types of the location I was looking at. I think this method of obtaining training data is possible and acceptable if one has good knowledge about the study area.</p>
-<p>It was a mystery before this module how to do slum mapping with EO data but I think I can have a go at it (in the summer) as I can now understand the literature in this area.</p>
+<p>It was a mystery before this module how to do slum mapping with EO data but I think I can have a go at it (in the summer) as I can now understand the literature in this area. The next step for me (before the summer) would be to understand the morphology or ontology of slums in the area of interest, so that would feed into feature selection.</p>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
 

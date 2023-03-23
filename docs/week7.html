@@ -179,14 +179,17 @@ div.csl-indent {
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a>
   <ul class="collapse">
   <li><a href="#object-based-image-analysis" id="toc-object-based-image-analysis" class="nav-link" data-scroll-target="#object-based-image-analysis">Object-based image analysis</a></li>
-  <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment">Accuracy assessment</a></li>
-  <li><a href="#validation-methods-how-do-we-get-the-accuracy-statistics" id="toc-validation-methods-how-do-we-get-the-accuracy-statistics" class="nav-link" data-scroll-target="#validation-methods-how-do-we-get-the-accuracy-statistics">Validation methods (How do we get the accuracy statistics?)</a>
+  <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment">Accuracy assessment</a>
   <ul class="collapse">
+  <li><a href="#validation-methods-how-do-we-get-the-accuracy-statistics" id="toc-validation-methods-how-do-we-get-the-accuracy-statistics" class="nav-link" data-scroll-target="#validation-methods-how-do-we-get-the-accuracy-statistics">Validation methods (How do we get the accuracy statistics?)</a></li>
   <li><a href="#what-to-consider" id="toc-what-to-consider" class="nav-link" data-scroll-target="#what-to-consider">What to consider</a></li>
   </ul></li>
   </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -218,47 +221,62 @@ div.csl-indent {
 
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<p>We looked at object-based image analysis which is a hybrid of arts and science, and this was followed by accuracy assessment of classification tasks.Below is a summary.</p>
+<p>We looked at object-based image analysis which is a hybrid of arts and science, and this was followed by accuracy assessment of classification tasks. Below is a summary.</p>
 <section id="object-based-image-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="object-based-image-analysis">Object-based image analysis</h2>
-<p>The essence of the method is that through iterations, a pixel is turned into a collection of similar pixels, which becomes an object and is used for analysis instead of a pixel. According to Jensen, this method is often used for the analysis of high spatial resolution imagery such as GeoEye-1 or WorldView-2.</p>
+<p>The essence of the method is that through iterations, a pixel is turned into a collection of similar pixels, which becomes an object and is used for analysis (e.g., classification) instead of pixels. According to Jensen, this method is often used for the analysis of high spatial resolution imagery such as GeoEye-1 or WorldView-2, which makes sense as high spatial resolution imagery can detect shapes of (relatively) small objects. The OBIA allows to integrate spectral, spatial and contextual information, so researchers also suggest that it is more pertinent in classifying urban land cover/ land use, which is highly heterogenous and includes a mix of different land cover /land use. In the practical materials, two segmentation methods were introduced, (1) k-mean clustering and (2) Simple non-iterative clustering. I think the downside is that this method is more complex…</p>
 </section>
 <section id="accuracy-assessment" class="level2">
 <h2 class="anchored" data-anchor-id="accuracy-assessment">Accuracy assessment</h2>
-<p>The other thing we looked at is accuracy assessment. Normally a simple two-by-two matrix of true classes and classified classes is used, which I believe is called a ‘confusion’ matri but Jensen calls it an error matrix <span class="citation" data-cites="jensen2014">(<a href="#ref-jensen2014" role="doc-biblioref">Jensen 2016</a>)</span>. Whatever it is called, the two-by-two matrix shows the number of true positives, false positive, true negative and false negative. But for multiclass classification tasks, the number of rows and columns can be equal to the number of classes. <em>Overall accuracy</em> can be calculated as the number of labels correctly identified, divided by the total number of labels.</p>
-<p>There are other accuracy measures too. <em>User accuracy</em> (UA) is calculated as the total number of correctly classified pixels, divided by the total number of pixels classified in that category. UA assess the number $$of true positive divided by the number of true positive and false positive. (I guess this is the perspective from the user of the map) <em>Producer accuracy</em> is calculated as the total number of correct pixels in a class divided by the total number of pixels of that class from the ground reference data. PA equals the number of true positive divided by true positive and true negative. These are very intuitive.</p>
-<p>Another method is to use Kappa. Kappa is given by:</p>
+<p>The other thing we looked at is accuracy assessment. Normally a simple two-by-two matrix of true classes and classified classes is used, which I believe is called a ‘confusion’ matrix but Jensen calls it an error matrix <span class="citation" data-cites="jensen2014">(<a href="#ref-jensen2014" role="doc-biblioref">Jensen 2016</a>)</span>. Whatever it is called, the two-by-two matrix shows the number of true positives, false positive, true negative and false negative. But for multiclass classification tasks, the number of rows and columns can be equal to the number of classes. <em>Overall accuracy</em> can be calculated as the number of labels correctly identified, divided by the total number of labels.</p>
+<p>There are other accuracy measures too. <em>User accuracy</em> (UA) is calculated as the total number of correctly classified pixels, divided by the total number of pixels classified in that category. UA assess the number of true positive divided by the number of true positive and false positive. (I guess this reflects the perspective from the user of the map) <em>Producer accuracy</em> is calculated as the total number of correct pixels in a class divided by the total number of pixels of that class from the ground reference data. PA equals the number of true positive divided by true positive and true negative. These metrics are very intuitive and relatively easy to apply.</p>
+<p>Another method is to use Kappa, which is not so intuitive. Kappa is given by:</p>
 <p><span class="math display">\[
 k = N \sum_{i=1}^n X_ij -
 \]</span></p>
-</section>
-<section id="validation-methods-how-do-we-get-the-accuracy-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="validation-methods-how-do-we-get-the-accuracy-statistics">Validation methods (How do we get the accuracy statistics?)</h2>
+<section id="validation-methods-how-do-we-get-the-accuracy-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="validation-methods-how-do-we-get-the-accuracy-statistics">Validation methods (How do we get the accuracy statistics?)</h3>
 <ul>
 <li><p>K-fold Cross validation (which uses a different subset of data for testing and take the average accuracy statistics across different test and training splits)</p></li>
 <li><p>Leave one out (this takes one data out from the training dataset of n data points and train the model by using n-1 training data sets) and take average</p></li>
 </ul>
+</section>
 <section id="what-to-consider" class="level3">
 <h3 class="anchored" data-anchor-id="what-to-consider">What to consider</h3>
 <ul>
-<li>Remember that near things are more related than distant things. This should be taken into account when selecting regions of interests. For validation datasets, pixels too near to the areas used for training datasets should be excluded or a distance should be determined such that the validation data should not be taken from any areas within the distance boundary from the training datasets.</li>
-<li>Also talked about how to select training datasets and the value of selecting something invariant over time.</li>
+<li>Remember that “near things are more related than distant things”. This ‘first law of geography’ should be taken into account when splitting training and testing data set, because if spatial independence is ignored, the error rate can be underestimated <span class="citation" data-cites="karasiak2021">(<a href="#ref-karasiak2021" role="doc-biblioref">Karasiak et al. 2021</a>)</span>. For testing datasets, pixels too near to the areas used for training datasets should be excluded or a distance should be determined such that the testing data should not be taken from any areas within the distance boundary from the training data set. Karasiak et al.&nbsp;used the Moran’s I to find the threshold distance, beyond which the spatial dependence is insignificant.</li>
+<li>Also talked about how to select training data and the value of selecting something invariant over time. Jensen also suggests that the environment should be homogenous in that spectral conditions for a given class should be representative of the study area.</li>
 </ul>
 </section>
 </section>
 </section>
 <section id="application" class="level1">
 <h1>Application</h1>
+<p>As this method is suitable for classifying urban land cover land use, researchers have used it to identify informal settlements. (eg. <span class="citation" data-cites="kohli2013 mathenge2011application">(<a href="#ref-kohli2013" role="doc-biblioref">Kohli et al. 2013</a>; <a href="#ref-mathenge2011application" role="doc-biblioref">Mathenge 2011</a>)</span>) Both Kohli et al.&nbsp;and Mathenge used ‘multi-resolutaion segmentation’ for image segmentation (which seems like a simpler method than what we saw in the practical like k-mean cluster). Starting with individual pixels, objects are formed until “a threashold representing the upper object variance is reached”, according to this site here (<a href="https://learningzone.rspsoc.org.uk/index.php/Learning-Materials/Object-oriented-Classification/2.5.-Multi-Resolution-Segmentation">2.5. Multi-Resolution Segmentation | Object-oriented Classification | Learning Materials (rspsoc.org.uk)</a>). But I support the difficult bit is setting the threshold. Kohli et al., used ‘expert knowledge’…. (which I don’t have).</p>
+<p>That being said, they also employed an interesting approach. Kohli et al.&nbsp;adapted a generic slum ontology framework in characterising the slums of their study site. The framework includes three levels: the environment, settlement and object-levels and these characteristics (e.g., irregular shape for the object level characteristic and proximity to highways , railways etc for the environment level) were translated to ‘parameters’. Methenge also took a very similar approach and incorporated the ontology of slums into their analysis.</p>
 </section>
 <section id="reflection" class="level1">
 <h1>Reflection</h1>
+<p>The object based image analysis approach appears to improve the accuracy of urban environment classifications but is certainly more complex than pixel-level classification. I can see the advantage of being able to consider the colours, sizes or shapes of objects. But before deciding which approach (pixel- or object-level classification) to take, I would find out which segmentation methods seem appropriate for the study site.</p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-jensen2014" class="csl-entry" role="doc-biblioentry">
 Jensen, John R. 2016. <em>Introductory Digital Image Processing: A Remote Sensing Perspective</em>. Pearson Education.
 </div>
+<div id="ref-karasiak2021" class="csl-entry" role="doc-biblioentry">
+Karasiak, N., J.-F. Dejoux, C. Monteil, and D. Sheeren. 2021. <span>“Spatial Dependence Between Training and Test Sets: Another Pitfall of Classification Accuracy Assessment in Remote Sensing.”</span> <em>Machine Learning</em> 111 (7): 2715–40. <a href="https://doi.org/10.1007/s10994-021-05972-1">https://doi.org/10.1007/s10994-021-05972-1</a>.
 </div>
+<div id="ref-kohli2013" class="csl-entry" role="doc-biblioentry">
+Kohli, Divyani, Pankaj Warwadekar, Norman Kerle, Richard Sliuzas, and Alfred Stein. 2013. <span>“Transferability of Object-Oriented Image Analysis Methods for Slum Identification.”</span> <em>Remote Sensing</em> 5 (9): 4209–28. <a href="https://doi.org/10.3390/rs5094209">https://doi.org/10.3390/rs5094209</a>.
+</div>
+<div id="ref-mathenge2011application" class="csl-entry" role="doc-biblioentry">
+Mathenge, CAROLINE WANJIKU. 2011. <span>“Application of Object Oriented Image Analysis in Slum Identification and Mapping: The Case of Kisumu, Kenya.”</span> Master’s thesis, University of Twente.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->

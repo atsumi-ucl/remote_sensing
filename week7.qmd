@@ -6,25 +6,25 @@ editor: visual
 
 # Summary
 
-We looked at object-based image analysis which is a hybrid of arts and science, and this was followed by accuracy assessment of classification tasks.Below is a summary.
+We looked at object-based image analysis which is a hybrid of arts and science, and this was followed by accuracy assessment of classification tasks. Below is a summary.
 
 ## Object-based image analysis
 
-The essence of the method is that through iterations, a pixel is turned into a collection of similar pixels, which becomes an object and is used for analysis instead of a pixel. According to Jensen, this method is often used for the analysis of high spatial resolution imagery such as GeoEye-1 or WorldView-2.
+The essence of the method is that through iterations, a pixel is turned into a collection of similar pixels, which becomes an object and is used for analysis (e.g., classification) instead of pixels. According to Jensen, this method is often used for the analysis of high spatial resolution imagery such as GeoEye-1 or WorldView-2, which makes sense as high spatial resolution imagery can detect shapes of (relatively) small objects. The OBIA allows to integrate spectral, spatial and contextual information, so researchers also suggest that it is more pertinent in classifying urban land cover/ land use, which is highly heterogenous and includes a mix of different land cover /land use. In the practical materials, two segmentation methods were introduced, (1) k-mean clustering and (2) Simple non-iterative clustering. I think the downside is that this method is more complex...
 
 ## Accuracy assessment
 
-The other thing we looked at is accuracy assessment. Normally a simple two-by-two matrix of true classes and classified classes is used, which I believe is called a 'confusion' matri but Jensen calls it an error matrix [@jensen2014]. Whatever it is called, the two-by-two matrix shows the number of true positives, false positive, true negative and false negative. But for multiclass classification tasks, the number of rows and columns can be equal to the number of classes. *Overall accuracy* can be calculated as the number of labels correctly identified, divided by the total number of labels.
+The other thing we looked at is accuracy assessment. Normally a simple two-by-two matrix of true classes and classified classes is used, which I believe is called a 'confusion' matrix but Jensen calls it an error matrix [@jensen2014]. Whatever it is called, the two-by-two matrix shows the number of true positives, false positive, true negative and false negative. But for multiclass classification tasks, the number of rows and columns can be equal to the number of classes. *Overall accuracy* can be calculated as the number of labels correctly identified, divided by the total number of labels.
 
-There are other accuracy measures too. *User accuracy* (UA) is calculated as the total number of correctly classified pixels, divided by the total number of pixels classified in that category. UA assess the number \$\$of true positive divided by the number of true positive and false positive. (I guess this is the perspective from the user of the map) *Producer accuracy* is calculated as the total number of correct pixels in a class divided by the total number of pixels of that class from the ground reference data. PA equals the number of true positive divided by true positive and true negative. These are very intuitive.
+There are other accuracy measures too. *User accuracy* (UA) is calculated as the total number of correctly classified pixels, divided by the total number of pixels classified in that category. UA assess the number of true positive divided by the number of true positive and false positive. (I guess this reflects the perspective from the user of the map) *Producer accuracy* is calculated as the total number of correct pixels in a class divided by the total number of pixels of that class from the ground reference data. PA equals the number of true positive divided by true positive and true negative. These metrics are very intuitive and relatively easy to apply.
 
-Another method is to use Kappa. Kappa is given by:
+Another method is to use Kappa, which is not so intuitive. Kappa is given by:
 
 $$
  k = N \sum_{i=1}^n X_ij -
 $$
 
-## Validation methods (How do we get the accuracy statistics?)
+### Validation methods (How do we get the accuracy statistics?)
 
 -   K-fold Cross validation (which uses a different subset of data for testing and take the average accuracy statistics across different test and training splits)
 
@@ -32,9 +32,17 @@ $$
 
 ### What to consider
 
--   Remember that near things are more related than distant things. This should be taken into account when selecting regions of interests. For validation datasets, pixels too near to the areas used for training datasets should be excluded or a distance should be determined such that the validation data should not be taken from any areas within the distance boundary from the training datasets.
--   Also talked about how to select training datasets and the value of selecting something invariant over time.
+-   Remember that "near things are more related than distant things". This 'first law of geography' should be taken into account when splitting training and testing data set, because if spatial independence is ignored, the error rate can be underestimated [@karasiak2021]. For testing datasets, pixels too near to the areas used for training datasets should be excluded or a distance should be determined such that the testing data should not be taken from any areas within the distance boundary from the training data set. Karasiak et al. used the Moran's I to find the threshold distance, beyond which the spatial dependence is insignificant.
+-   Also talked about how to select training data and the value of selecting something invariant over time. Jensen also suggests that the environment should be homogenous in that spectral conditions for a given class should be representative of the study area.
 
 # Application
 
+As this method is suitable for classifying urban land cover land use, researchers have used it to identify informal settlements. (eg. [@kohli2013; @mathenge2011application]) Both Kohli et al. and Mathenge used 'multi-resolutaion segmentation' for image segmentation (which seems like a simpler method than what we saw in the practical like k-mean cluster). Starting with individual pixels, objects are formed until "a threashold representing the upper object variance is reached", according to this site here ([2.5. Multi-Resolution Segmentation \| Object-oriented Classification \| Learning Materials (rspsoc.org.uk)](https://learningzone.rspsoc.org.uk/index.php/Learning-Materials/Object-oriented-Classification/2.5.-Multi-Resolution-Segmentation)). But I support the difficult bit is setting the threshold. Kohli et al., used 'expert knowledge'.... (which I don't have).
+
+That being said, they also employed an interesting approach. Kohli et al. adapted a generic slum ontology framework in characterising the slums of their study site. The framework includes three levels: the environment, settlement and object-levels and these characteristics (e.g., irregular shape for the object level characteristic and proximity to highways , railways etc for the environment level) were translated to 'parameters'. Methenge also took a very similar approach and incorporated the ontology of slums into their analysis.
+
 # Reflection
+
+The object based image analysis approach appears to improve the accuracy of urban environment classifications but is certainly more complex than pixel-level classification. I can see the advantage of being able to consider the colours, sizes or shapes of objects. But before deciding which approach (pixel- or object-level classification) to take, I would find out which segmentation methods seem appropriate for the study site.
+
+## References
