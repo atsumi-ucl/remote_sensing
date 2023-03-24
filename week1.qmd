@@ -10,13 +10,9 @@ Among the many points addressed in the lecture were: 1. Earth Observation data u
 
 ![](light%20electromagnetic%20radiation.png)
 
-Take leaves or vegetation as an example. They can be viewed in the visible spectrum but also in the near-infrared light.
+Take leaves or vegetation as an example. They can be viewed in the visible spectrum but also in the near-infrared light. Why? Firstly, why leaves green? Wavelengths in the green region of the electromagnetic spectrum are reflected by pigments in the leaf' (NASA Science). That's why we see green leaves. But also 'a plant with more chlorophyll (pigment) will reflect more near-infrared energy than an unhealthy plant' (NASA Science). So this is why with satellite imagery, we can use both the visible and invisible near-infrared spectrum to study vegetation.
 
-Firstly, why leaves green? Wavelengths in the green region of the electromagnetic spectrum are reflected by pigments in the leaf' (NASA Science). That's why we see green leaves. But also 'a plant with more chlorophyll (pigment) will reflect more near-infrared energy than an unhealthy plant' (NASA Science). So this is why with satellite imagery, we can use both the visible and invisible near-infrared spectrum to study vegetation.
-
-SCATTERING: Why is the sky black on the moon? (no atmosphere) Why is the sky blue? (short waves scattered) Why is the sky red when the sun goes down?
-
-Why is the ocean blue? - water absorbs the red yellow and green waves but reflects /scatters blue.
+SCATTERING: Why is the sky blue? (Because short waves scattered) Why is the sky red when the sun goes down? (Because sunlight travel farther through the atmosphere, the blue light is scattered away) Why is the ocean blue? - water absorbs the red yellow and green waves but reflects /scatters blue. Why is the sky black on the moon? (Because no atmosphere)
 
 Finally, there are two types of sensors to record electromagnetic radiation.
 
