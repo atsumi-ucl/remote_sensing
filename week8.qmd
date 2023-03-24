@@ -16,7 +16,7 @@ This week, we examined the urban heat island (UHI) including its impacts and how
 
 In practical, we first used GEE to plotted LST from Landsat and MODIS, which was quite straightforward (thankfully). The difference between Landsat and MODIS was that Landsat has higher spatial resolution (30m) while MODIS has 1 km, but MODIS is able to do time series analysis in GEE. But it is possible to download LST from Landsat and conduct analysis in R or other software.
 
-While LST from EO data is useful, for it provides surface temperate estimates for every place on Earth, an important limitation is that surface temperature may not be the same as ambient air temperature as Chakraborty et al., claims [-@chakraborty2022].
+While LST from EO data is useful, for it provides surface temperate estimates for **every place** on Earth, an **important limitation** is that surface temperature may not be the same as ambient air temperature as Chakraborty et al., claims [-@chakraborty2022].
 
 # Application
 
