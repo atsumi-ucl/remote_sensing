@@ -18,11 +18,7 @@ The other thing we looked at is accuracy assessment. Normally a simple two-by-tw
 
 There are other accuracy measures too. *User accuracy* (UA) is calculated as the total number of correctly classified pixels, divided by the total number of pixels classified in that category. UA assess the number of true positive divided by the number of true positive and false positive. (I guess this reflects the perspective from the user of the map) *Producer accuracy* is calculated as the total number of correct pixels in a class divided by the total number of pixels of that class from the ground reference data. PA equals the number of true positive divided by true positive and true negative. These metrics are very intuitive and relatively easy to apply.
 
-Another method is to use Kappa, which is not so intuitive. Kappa is given by:
-
-$$
- k = N \sum_{i=1}^n X_ij -
-$$
+Another method is to use Kappa, which is not so intuitive. It incorporates the major diagonal of the error matrix (that is the number of concordance) and the marginals (the row or column totals) into the calculation.  
 
 ### Validation methods (How do we get the accuracy statistics?)
 
@@ -32,7 +28,7 @@ $$
 
 ### What to consider
 
--   Remember that "near things are more related than distant things". This 'first law of geography' should be taken into account when splitting training and testing data set, because if spatial independence is ignored, the error rate can be underestimated [@karasiak2021]. For testing datasets, pixels too near to the areas used for training datasets should be excluded or a distance should be determined such that the testing data should not be taken from any areas within the distance boundary from the training data set. Karasiak et al. used the Moran's I to find the threshold distance, beyond which the spatial dependence is insignificant.
+-   Remember that "near things are more related than distant things". This 'first law of geography' should be taken into account when splitting training and testing data set, because if spatial independence is ignored, the error rate can be underestimated [@karasiak2021]. For testing datasets, pixels too near to the areas used for training should be excluded or a distance should be determined such that the testing data should not be taken from any areas within the distance boundary from the training data set. Karasiak et al. used the Moran's I to find the threshold distance, beyond which the spatial dependence is insignificant.
 -   Also talked about how to select training data and the value of selecting something invariant over time. Jensen also suggests that the environment should be homogenous in that spectral conditions for a given class should be representative of the study area.
 
 # Application

@@ -226,7 +226,7 @@ div.csl-indent {
 <section id="atmospheric-correction" class="level2">
 <h2 class="anchored" data-anchor-id="atmospheric-correction">Atmospheric correction</h2>
 <p>Atmospheric correction can be applied when errors are related to (1) atmospheric attenuation, ie loss of radiation due to scattering and absorption in the atmosphere or (2) topographic attenuation or loss or radiation due to the topography. Topographic attenuation relates to the influence of topography (such as rugged mountainous regions) on the signals recorded by satellite sensors.</p>
-<p>There are two types of correction methods: absolute and relative atmospheric correction. Absolute atmospheric correction aims to “turn&nbsp; the digital brightness values recorded by a remote sensing system into scaled surface reflectance values” (Jensen), but this requires knowledge about atmospheric conditions across the atmosphere in the imaged area, the “sensor spectral profile” and the ‘models’ to estimate the effect of atmospheric attenuation. If any of these are not available, then relative atmospheric correction may be applied.</p>
+<p>There are two types of correction methods: absolute and relative atmospheric correction. Absolute atmospheric correction aims to “turn&nbsp; the digital brightness values recorded by a remote sensing system into scaled surface reflectance values” <span class="citation" data-cites="jensen2014">(<a href="#ref-jensen2014" role="doc-biblioref">Jensen 2016</a>)</span>, but this requires knowledge about atmospheric conditions across the atmosphere in the imaged area, the “sensor spectral profile” and the ‘models’ to estimate the effect of atmospheric attenuation. If any of these are not available, then relative atmospheric correction may be applied.</p>
 <p>Relative atmospheric correction may be applied by first finding an area with no reflectance (black area) such as deep water and recording the Digital Number and subtracting it (called ‘the Dark Object Subtraction method’) from all the data. This is equivalent to shifting the histogram&nbsp; to the left so that the data ranges from 0. &nbsp;</p>
 <p>But Jensen suggests that there are necessary and unnecessary atmospheric correction. It is unnecessary when change detections are performed on a single date of data but it is necessary if training data span across multiple dates or space.&nbsp;</p>
 </section>
@@ -249,6 +249,9 @@ div.csl-indent {
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-ilori2019" class="csl-entry" role="doc-biblioentry">
 Ilori, Christopher, Nima Pahlevan, and Anders Knudby. 2019. <span>“Analyzing Performances of Different Atmospheric Correction Techniques for Landsat 8: Application for Coastal Remote Sensing.”</span> <em>Remote Sensing</em> 11 (4): 469. <a href="https://doi.org/10.3390/rs11040469">https://doi.org/10.3390/rs11040469</a>.
+</div>
+<div id="ref-jensen2014" class="csl-entry" role="doc-biblioentry">
+Jensen, John R. 2016. <em>Introductory Digital Image Processing: A Remote Sensing Perspective</em>. Pearson Education.
 </div>
 <div id="ref-song2001" class="csl-entry" role="doc-biblioentry">
 Song, Conghe, Curtis E. Woodcock, Karen C. Seto, Mary Pax Lenney, and Scott A. Macomber. 2001. <span>“Classification and Change Detection Using Landsat TM Data.”</span> <em>Remote Sensing of Environment</em> 75 (2): 230–44. <a href="https://doi.org/10.1016/s0034-4257(00)00169-3">https://doi.org/10.1016/s0034-4257(00)00169-3</a>.

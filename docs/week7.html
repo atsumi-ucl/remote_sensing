@@ -79,7 +79,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -230,10 +229,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="accuracy-assessment">Accuracy assessment</h2>
 <p>The other thing we looked at is accuracy assessment. Normally a simple two-by-two matrix of true classes and classified classes is used, which I believe is called a ‘confusion’ matrix but Jensen calls it an error matrix <span class="citation" data-cites="jensen2014">(<a href="#ref-jensen2014" role="doc-biblioref">Jensen 2016</a>)</span>. Whatever it is called, the two-by-two matrix shows the number of true positives, false positive, true negative and false negative. But for multiclass classification tasks, the number of rows and columns can be equal to the number of classes. <em>Overall accuracy</em> can be calculated as the number of labels correctly identified, divided by the total number of labels.</p>
 <p>There are other accuracy measures too. <em>User accuracy</em> (UA) is calculated as the total number of correctly classified pixels, divided by the total number of pixels classified in that category. UA assess the number of true positive divided by the number of true positive and false positive. (I guess this reflects the perspective from the user of the map) <em>Producer accuracy</em> is calculated as the total number of correct pixels in a class divided by the total number of pixels of that class from the ground reference data. PA equals the number of true positive divided by true positive and true negative. These metrics are very intuitive and relatively easy to apply.</p>
-<p>Another method is to use Kappa, which is not so intuitive. Kappa is given by:</p>
-<p><span class="math display">\[
-k = N \sum_{i=1}^n X_ij -
-\]</span></p>
+<p>Another method is to use Kappa, which is not so intuitive. It incorporates the major diagonal of the error matrix (that is the number of concordance) and the marginals (the row or column totals) into the calculation.</p>
 <section id="validation-methods-how-do-we-get-the-accuracy-statistics" class="level3">
 <h3 class="anchored" data-anchor-id="validation-methods-how-do-we-get-the-accuracy-statistics">Validation methods (How do we get the accuracy statistics?)</h3>
 <ul>
@@ -244,7 +240,7 @@ k = N \sum_{i=1}^n X_ij -
 <section id="what-to-consider" class="level3">
 <h3 class="anchored" data-anchor-id="what-to-consider">What to consider</h3>
 <ul>
-<li>Remember that “near things are more related than distant things”. This ‘first law of geography’ should be taken into account when splitting training and testing data set, because if spatial independence is ignored, the error rate can be underestimated <span class="citation" data-cites="karasiak2021">(<a href="#ref-karasiak2021" role="doc-biblioref">Karasiak et al. 2021</a>)</span>. For testing datasets, pixels too near to the areas used for training datasets should be excluded or a distance should be determined such that the testing data should not be taken from any areas within the distance boundary from the training data set. Karasiak et al.&nbsp;used the Moran’s I to find the threshold distance, beyond which the spatial dependence is insignificant.</li>
+<li>Remember that “near things are more related than distant things”. This ‘first law of geography’ should be taken into account when splitting training and testing data set, because if spatial independence is ignored, the error rate can be underestimated <span class="citation" data-cites="karasiak2021">(<a href="#ref-karasiak2021" role="doc-biblioref">Karasiak et al. 2021</a>)</span>. For testing datasets, pixels too near to the areas used for training should be excluded or a distance should be determined such that the testing data should not be taken from any areas within the distance boundary from the training data set. Karasiak et al.&nbsp;used the Moran’s I to find the threshold distance, beyond which the spatial dependence is insignificant.</li>
 <li>Also talked about how to select training data and the value of selecting something invariant over time. Jensen also suggests that the environment should be homogenous in that spectral conditions for a given class should be representative of the study area.</li>
 </ul>
 </section>
