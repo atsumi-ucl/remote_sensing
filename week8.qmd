@@ -20,8 +20,7 @@ While LST from EO data is useful, for it provides surface temperate estimates fo
 
 # Application
 
-As noted by Chakraborty, the LST may not be the same as ambient temperature. So various models have been developed to predict ambient temperature based on LST from EO and air temperature data observed at meteorological stations. One of the models developed by Carrion et al., [-@carrión2021] uses a machine learning algorithm called extreme gradient boosting. Ambient temperature estimates were then applied to assess the effect of exposure to heat on pregnancy outcomes
-[@yitshak-sade2021]. Massive efforts were put to produce important results that suggest heat exposure during the critical periods of pregnancy (that is the first and the third trimester) is associated with lower birthweight.
+As noted by Chakraborty, the LST may not be the same as ambient temperature. So various models have been developed to predict ambient temperature based on LST from EO and air temperature data observed at meteorological stations. One of the models developed by Carrion et al., [-@carrión2021] uses a machine learning algorithm called extreme gradient boosting. Ambient temperature estimates were then applied to assess the effect of exposure to heat on pregnancy outcomes [@yitshak-sade2021]. Massive efforts were put to produce important results that suggest heat exposure during the critical periods of pregnancy (that is the first and the third trimester) is associated with lower birthweight.
 
 # Reflection
 
