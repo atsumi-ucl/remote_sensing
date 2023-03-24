@@ -177,8 +177,10 @@ div.csl-indent {
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a>
+  <ul class="collapse">
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -213,10 +215,7 @@ div.csl-indent {
 <p>This week, we looked at Google Earth Engine (GEE).</p>
 <p>What I understood is that GEE has got many images (including Landsat, Sentinel, MODIS, ASTER, USDA NAIP) and other data (such as Landcover, weather, precipitation and atmosphere and Population data) <span class="citation" data-cites="gorelick2017">(<a href="#ref-gorelick2017" role="doc-biblioref">Gorelick et al. 2017</a>)</span> that can be accessed on GEE and it is very easy to download data. Often, this is done by just a click. Another key feature of GEE is how fast it can process.</p>
 <p>So that’s all great. However, obviously, you will need to know javascript to take advantage of all that’s offered in GEE. (So it is not that easy to use after all! ) GEE also provide Python API.</p>
-<p>To note, Scale parameter</p>
-<ul>
-<li>GEE aggregates the values based on your analysis.</li>
-</ul>
+<p>To note, we were reminded that we must consider a Scale factor when using Landsat level 2 surface reflectance and surface temperature products before using the data.</p>
 <p>Some analysis tools introduced this week is “Reducer”.</p>
 <p>Reducer types:</p>
 <ul>
@@ -238,9 +237,8 @@ div.csl-indent {
 <section id="reflection" class="level1">
 <h1>Reflection</h1>
 <p>I think for those who are able to write codes, GEE is great. However, those who are not, there is still a barrier to using GEE (as clear from the Wimberly paper <span class="citation" data-cites="wimberly2022">(<a href="#ref-wimberly2022" role="doc-biblioref">Wimberly, Nekorchuk, and Kankanala 2022</a>)</span>, and thus by extension a barrier to using emote sensing data for researchers outside the discipline of remote sensing. Thankfully, I think I can consider myself as someone who can write codes after taking two python modules. So I am looking forward to exploring this more in the summer when I work on my dissertation.</p>
-</section>
-<section id="references" class="level1">
-<h1>References</h1>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
@@ -254,6 +252,7 @@ Wimberly, Michael C., Dawn M. Nekorchuk, and Ramcharan R. Kankanala. 2022. <span
 Xu, Jiayuan, Xiaoxuan Liu, Qiaojun Li, Ran Goldblatt, Wen Qin, Feng Liu, Congying Chu, et al. 2021. <span>“Global Urbanicity Is Associated with Brain and Behaviour in Young People.”</span> <em>Nature Human Behaviour</em> 6 (2): 279–93. <a href="https://doi.org/10.1038/s41562-021-01204-7">https://doi.org/10.1038/s41562-021-01204-7</a>.
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->

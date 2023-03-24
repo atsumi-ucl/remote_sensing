@@ -12,9 +12,7 @@ What I understood is that GEE has got many images (including Landsat, Sentinel, 
 
 So that's all great. However, obviously, you will need to know javascript to take advantage of all that's offered in GEE. (So it is not that easy to use after all! ) GEE also provide Python API.
 
-To note, Scale parameter
-
--   GEE aggregates the values based on your analysis.
+To note, we were reminded that we must consider a Scale factor when using Landsat level 2 surface reflectance and surface temperature products before using the data.
 
 Some analysis tools introduced this week is "Reducer".
 
