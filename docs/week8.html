@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
 }
 </style>
 
@@ -190,23 +209,34 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<p>This week, we examined the urban heat island including its impacts and how impacts may be minimised by effective policies. UHI is caused by the urban area generating and keeping heats and the relative cooler temperature in outside urban areas. We looked at both (1) global policies and initiatives and (2) how global policies are implemented locally.</p>
+<p>This week, we examined the urban heat island (UHI) including its impacts and how impacts may be minimised by effective policies. UHI is caused by the urban area generating and keeping heats and the relative cooler temperature in outside urban areas. We looked at both global policies and initiatives and how global policies are implemented locally.</p>
 <p>(1) We looked at the <a href="https://www.unep.org/ndc/resources/report/beating-heat-sustainable-cooling-handbook-cities">Beat the Heat handbook</a> which showcase 80 options that cities can adapt to beat the heat.</p>
 <p>(2) We also looked at the “superblock model” where mini-blocs surrounded by the roads are reserved for pedestrians to enjoy and the vehicles are not allowed in. This is similar to the 15 minute city idea. The example in Spain resulted in a reduction in noise level, nitrogen oxide, and an increase in economic activity.</p>
-<p>(3) The idea of green corridors (planting trees) is another example.</p>
-<p>(4) The Turn Down the Heat strategy are another examples.</p>
+<p>(3) The idea of green corridors (planting trees) and the Turn Down the Heat strategy are another examples.</p>
+<p>In practical, we first used GEE to plotted LST from Landsat and MODIS, which was quite straightforward (thankfully). The difference between Landsat and MODIS was that Landsat has higher spatial resolution (30m) while MODIS has 1 km, but MODIS is able to do time series analysis in GEE. But it is possible to download LST from Landsat and conduct analysis in R or other software.</p>
+<p>While LST from EO data is useful, for it provides surface temperate estimates for every place on Earth, an important limitation is that surface temperature may not be the same as ambient air temperature as Chakraborty et al., claims <span class="citation" data-cites="chakraborty2022">(<a href="#ref-chakraborty2022" role="doc-biblioref">2022</a>)</span>.</p>
 </section>
 <section id="application" class="level1">
 <h1>Application</h1>
-<p>Chakrabortey - ambient temperature and surface temperature weakly correlated??</p>
-<p>Intra-urban heat island, disparities within cities</p>
+<p>As noted by Chakraborty, the LST may not be the same as ambient temperature. So various models have been developed to predict ambient temperature based on LST from EO and air temperature data observed at meteorological stations. One of the models developed by Carrion et al., <span class="citation" data-cites="carrión2021">(<a href="#ref-carrión2021" role="doc-biblioref">2021</a>)</span> uses a machine learning algorithm called extreme gradient boosting. Ambient temperature estimates were then applied to assess the effect of exposure to heat on pregnancy outcomes <span class="citation" data-cites="yitshak-sade2021">(<a href="#ref-yitshak-sade2021" role="doc-biblioref">Yitshak-Sade et al. 2021</a>)</span>. Massive efforts were put to produce important results that suggest heat exposure during the critical periods of pregnancy (that is the first and the third trimester) is associated with lower birthweight.</p>
 </section>
 <section id="reflection" class="level1">
 <h1>Reflection</h1>
-<p>Many ideas exist to reduce the temperature in urban areas. Often technical skills are needed to implement the idea to reduce the temperature effectively. For example, where to plant trees.</p>
-<p>Should policies be implemented for equality, equities, or justice?</p>
+<p>It was interesting to see various polices to reduce the heat stress. Many ideas exist to reduce the temperature in urban areas. Often technical skills are needed to implement the idea to reduce the temperature effectively.</p>
+<p>The LST from EO data is of great value but still a lot of modelling is needed to obtain the data that can be useful for human research. If I were to do a study to examine heat exposure and health outcomes, I would need to look for validated data that estimate heat stress. (maybe another project when I have headspace).</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-carrión2021" class="csl-entry" role="doc-biblioentry">
+Carrión, Daniel, Kodi B. Arfer, Johnathan Rush, Michael Dorman, Sebastian T. Rowland, Marianthi-Anna Kioumourtzoglou, Itai Kloog, and Allan C. Just. 2021. <span>“A 1-Km Hourly Air-Temperature Model for 13 Northeastern U.S. States Using Remotely Sensed and Ground-Based Measurements.”</span> <em>Environmental Research</em> 200 (September): 111477. <a href="https://doi.org/10.1016/j.envres.2021.111477">https://doi.org/10.1016/j.envres.2021.111477</a>.
+</div>
+<div id="ref-chakraborty2022" class="csl-entry" role="doc-biblioentry">
+Chakraborty, T., Z. S. Venter, Y. Qian, and X. Lee. 2022. <span>“Lower Urban Humidity Moderates Outdoor Heat Stress.”</span> <em>AGU Advances</em> 3 (5). <a href="https://doi.org/10.1029/2022av000729">https://doi.org/10.1029/2022av000729</a>.
+</div>
+<div id="ref-yitshak-sade2021" class="csl-entry" role="doc-biblioentry">
+Yitshak-Sade, Maayan, Itai Kloog, Joel D. Schwartz, Victor Novack, Offer Erez, and Allan C. Just. 2021. <span>“The Effect of Prenatal Temperature and PM2.5 Exposure on Birthweight: Weekly Windows of Exposure Throughout the Pregnancy.”</span> <em>Environment International</em> 155 (October): 106588. <a href="https://doi.org/10.1016/j.envint.2021.106588">https://doi.org/10.1016/j.envint.2021.106588</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

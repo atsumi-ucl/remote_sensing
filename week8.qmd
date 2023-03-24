@@ -6,24 +6,27 @@ editor: visual
 
 # Summary
 
-This week, we examined the urban heat island including its impacts and how impacts may be minimised by effective policies. UHI is caused by the urban area generating and keeping heats and the relative cooler temperature in outside urban areas. We looked at both (1) global policies and initiatives and (2) how global policies are implemented locally.
+This week, we examined the urban heat island (UHI) including its impacts and how impacts may be minimised by effective policies. UHI is caused by the urban area generating and keeping heats and the relative cooler temperature in outside urban areas. We looked at both global policies and initiatives and how global policies are implemented locally.
 
 \(1\) We looked at the [Beat the Heat handbook](https://www.unep.org/ndc/resources/report/beating-heat-sustainable-cooling-handbook-cities) which showcase 80 options that cities can adapt to beat the heat.
 
 \(2\) We also looked at the "superblock model" where mini-blocs surrounded by the roads are reserved for pedestrians to enjoy and the vehicles are not allowed in. This is similar to the 15 minute city idea. The example in Spain resulted in a reduction in noise level, nitrogen oxide, and an increase in economic activity.
 
-\(3\) The idea of green corridors (planting trees) is another example.
+\(3\) The idea of green corridors (planting trees) and the Turn Down the Heat strategy are another examples.
 
-\(4\) The Turn Down the Heat strategy are another examples.
+In practical, we first used GEE to plotted LST from Landsat and MODIS, which was quite straightforward (thankfully). The difference between Landsat and MODIS was that Landsat has higher spatial resolution (30m) while MODIS has 1 km, but MODIS is able to do time series analysis in GEE. But it is possible to download LST from Landsat and conduct analysis in R or other software.
+
+While LST from EO data is useful, for it provides surface temperate estimates for every place on Earth, an important limitation is that surface temperature may not be the same as ambient air temperature as Chakraborty et al., claims [-@chakraborty2022].
 
 # Application
 
-Chakrabortey - ambient temperature and surface temperature weakly correlated??
-
-Intra-urban heat island, disparities within cities
+As noted by Chakraborty, the LST may not be the same as ambient temperature. So various models have been developed to predict ambient temperature based on LST from EO and air temperature data observed at meteorological stations. One of the models developed by Carrion et al., [-@carrión2021] uses a machine learning algorithm called extreme gradient boosting. Ambient temperature estimates were then applied to assess the effect of exposure to heat on pregnancy outcomes
+[@yitshak-sade2021]. Massive efforts were put to produce important results that suggest heat exposure during the critical periods of pregnancy (that is the first and the third trimester) is associated with lower birthweight.
 
 # Reflection
 
-Many ideas exist to reduce the temperature in urban areas. Often technical skills are needed to implement the idea to reduce the temperature effectively. For example, where to plant trees.
+It was interesting to see various polices to reduce the heat stress. Many ideas exist to reduce the temperature in urban areas. Often technical skills are needed to implement the idea to reduce the temperature effectively.
 
-Should policies be implemented for equality, equities, or justice?
+The LST from EO data is of great value but still a lot of modelling is needed to obtain temperature data that can be useful for human research as the surface temperature may not be relevant to us. If I were to do a study to examine the effect of heat exposure on health outcomes, I would look for validated data that estimate heat stress from a model that takes both LST and observed data from weather stations. (maybe another project when I have headspace).
+
+## References
